@@ -1,4 +1,4 @@
-# At Least There Is Ceda Cedovic project files
+# At Least There is Čeda Čedović project files
 
 Source files for [At Least There is Čeda Čedović](https://leathericecream.itch.io/at-least-there-is-ceda-cedovic), made for [Unity version 2018.3.3f1](https://unity.com/releases/editor/whats-new/2018.3.3).
 
