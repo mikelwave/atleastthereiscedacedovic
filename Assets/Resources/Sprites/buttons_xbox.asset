@@ -1,0 +1,402 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84a92b25f83d49b9bc132d206b370281, type: 3}
+  m_Name: buttons_xbox
+  m_EditorClassIdentifier: 
+  hashCode: 1825735319
+  material: {fileID: 21340679190600088}
+  materialHashCode: 0
+  spriteSheet: {fileID: 2800000, guid: a7447db1c7ae5ba4385188111b2bf7f5, type: 3}
+  spriteInfoList:
+  - id: 0
+    x: 0
+    y: 96
+    width: 16
+    height: 16
+    xOffset: 0
+    yOffset: 15.6
+    xAdvance: 19
+    scale: 1.06
+    name: buttons_xbox_0
+    hashCode: -344098280
+    unicode: 0
+    pivot: {x: -8, y: 8}
+    sprite: {fileID: 21300000, guid: a7447db1c7ae5ba4385188111b2bf7f5, type: 3}
+  - id: 1
+    x: 16
+    y: 96
+    width: 16
+    height: 16
+    xOffset: 0
+    yOffset: 15.6
+    xAdvance: 19
+    scale: 1.06
+    name: buttons_xbox_1
+    hashCode: -344098279
+    unicode: 0
+    pivot: {x: -8, y: 8}
+    sprite: {fileID: 21300002, guid: a7447db1c7ae5ba4385188111b2bf7f5, type: 3}
+  - id: 2
+    x: 32
+    y: 96
+    width: 16
+    height: 16
+    xOffset: 0
+    yOffset: 15.6
+    xAdvance: 19
+    scale: 1.06
+    name: buttons_xbox_2
+    hashCode: -344098278
+    unicode: 0
+    pivot: {x: -8, y: 8}
+    sprite: {fileID: 21300004, guid: a7447db1c7ae5ba4385188111b2bf7f5, type: 3}
+  - id: 3
+    x: 48
+    y: 96
+    width: 16
+    height: 16
+    xOffset: 0
+    yOffset: 15.6
+    xAdvance: 19
+    scale: 1.06
+    name: buttons_xbox_3
+    hashCode: -344098277
+    unicode: 0
+    pivot: {x: -8, y: 8}
+    sprite: {fileID: 21300006, guid: a7447db1c7ae5ba4385188111b2bf7f5, type: 3}
+  - id: 4
+    x: 0
+    y: 80
+    width: 16
+    height: 16
+    xOffset: 0
+    yOffset: 15.6
+    xAdvance: 19
+    scale: 1.06
+    name: buttons_xbox_4
+    hashCode: -344098276
+    unicode: 0
+    pivot: {x: -8, y: 8}
+    sprite: {fileID: 21300008, guid: a7447db1c7ae5ba4385188111b2bf7f5, type: 3}
+  - id: 5
+    x: 16
+    y: 80
+    width: 16
+    height: 16
+    xOffset: 0
+    yOffset: 15.6
+    xAdvance: 19
+    scale: 1.06
+    name: buttons_xbox_5
+    hashCode: -344098275
+    unicode: 0
+    pivot: {x: -8, y: 8}
+    sprite: {fileID: 21300010, guid: a7447db1c7ae5ba4385188111b2bf7f5, type: 3}
+  - id: 6
+    x: 32
+    y: 80
+    width: 16
+    height: 16
+    xOffset: 0
+    yOffset: 15.6
+    xAdvance: 19
+    scale: 1.06
+    name: buttons_xbox_6
+    hashCode: -344098274
+    unicode: 0
+    pivot: {x: -8, y: 8}
+    sprite: {fileID: 21300012, guid: a7447db1c7ae5ba4385188111b2bf7f5, type: 3}
+  - id: 7
+    x: 48
+    y: 80
+    width: 16
+    height: 16
+    xOffset: 0
+    yOffset: 15.6
+    xAdvance: 19
+    scale: 1.06
+    name: buttons_xbox_7
+    hashCode: -344098273
+    unicode: 0
+    pivot: {x: -8, y: 8}
+    sprite: {fileID: 21300014, guid: a7447db1c7ae5ba4385188111b2bf7f5, type: 3}
+  - id: 8
+    x: 0
+    y: 64
+    width: 16
+    height: 16
+    xOffset: 0
+    yOffset: 15.6
+    xAdvance: 19
+    scale: 1.06
+    name: buttons_xbox_8
+    hashCode: -344098288
+    unicode: 0
+    pivot: {x: -8, y: 8}
+    sprite: {fileID: 21300016, guid: a7447db1c7ae5ba4385188111b2bf7f5, type: 3}
+  - id: 9
+    x: 16
+    y: 64
+    width: 16
+    height: 16
+    xOffset: 0
+    yOffset: 15.6
+    xAdvance: 19
+    scale: 1.06
+    name: buttons_xbox_9
+    hashCode: -344098287
+    unicode: 0
+    pivot: {x: -8, y: 8}
+    sprite: {fileID: 21300018, guid: a7447db1c7ae5ba4385188111b2bf7f5, type: 3}
+  - id: 10
+    x: 32
+    y: 64
+    width: 16
+    height: 16
+    xOffset: 0
+    yOffset: 15.6
+    xAdvance: 19
+    scale: 1.06
+    name: buttons_xbox_10
+    hashCode: 1529658633
+    unicode: 0
+    pivot: {x: -8, y: 8}
+    sprite: {fileID: 21300020, guid: a7447db1c7ae5ba4385188111b2bf7f5, type: 3}
+  - id: 11
+    x: 48
+    y: 64
+    width: 16
+    height: 16
+    xOffset: 0
+    yOffset: 15.6
+    xAdvance: 19
+    scale: 1.06
+    name: buttons_xbox_11
+    hashCode: 1529658632
+    unicode: 0
+    pivot: {x: -8, y: 8}
+    sprite: {fileID: 21300022, guid: a7447db1c7ae5ba4385188111b2bf7f5, type: 3}
+  - id: 12
+    x: 0
+    y: 48
+    width: 16
+    height: 16
+    xOffset: 0
+    yOffset: 15.6
+    xAdvance: 19
+    scale: 1.06
+    name: buttons_xbox_12
+    hashCode: 1529658635
+    unicode: 0
+    pivot: {x: -8, y: 8}
+    sprite: {fileID: 21300024, guid: a7447db1c7ae5ba4385188111b2bf7f5, type: 3}
+  - id: 13
+    x: 16
+    y: 48
+    width: 16
+    height: 16
+    xOffset: 0
+    yOffset: 15.6
+    xAdvance: 19
+    scale: 1.06
+    name: buttons_xbox_13
+    hashCode: 1529658634
+    unicode: 0
+    pivot: {x: -8, y: 8}
+    sprite: {fileID: 21300026, guid: a7447db1c7ae5ba4385188111b2bf7f5, type: 3}
+  - id: 14
+    x: 32
+    y: 48
+    width: 16
+    height: 16
+    xOffset: 0
+    yOffset: 15.6
+    xAdvance: 19
+    scale: 1.06
+    name: buttons_xbox_14
+    hashCode: 1529658637
+    unicode: 0
+    pivot: {x: -8, y: 8}
+    sprite: {fileID: 21300028, guid: a7447db1c7ae5ba4385188111b2bf7f5, type: 3}
+  - id: 15
+    x: 48
+    y: 48
+    width: 16
+    height: 16
+    xOffset: 0
+    yOffset: 15.6
+    xAdvance: 19
+    scale: 1.06
+    name: buttons_xbox_15
+    hashCode: 1529658636
+    unicode: 0
+    pivot: {x: -8, y: 8}
+    sprite: {fileID: 21300030, guid: a7447db1c7ae5ba4385188111b2bf7f5, type: 3}
+  - id: 16
+    x: 0
+    y: 32
+    width: 16
+    height: 16
+    xOffset: 0
+    yOffset: 15.6
+    xAdvance: 19
+    scale: 1.06
+    name: buttons_xbox_16
+    hashCode: 1529658639
+    unicode: 0
+    pivot: {x: -8, y: 8}
+    sprite: {fileID: 21300032, guid: a7447db1c7ae5ba4385188111b2bf7f5, type: 3}
+  - id: 17
+    x: 16
+    y: 32
+    width: 16
+    height: 16
+    xOffset: 0
+    yOffset: 15.6
+    xAdvance: 19
+    scale: 1.06
+    name: buttons_xbox_17
+    hashCode: 1529658638
+    unicode: 0
+    pivot: {x: -8, y: 8}
+    sprite: {fileID: 21300034, guid: a7447db1c7ae5ba4385188111b2bf7f5, type: 3}
+  - id: 18
+    x: 32
+    y: 32
+    width: 16
+    height: 16
+    xOffset: 0
+    yOffset: 15.6
+    xAdvance: 19
+    scale: 1.06
+    name: buttons_xbox_18
+    hashCode: 1529658625
+    unicode: 0
+    pivot: {x: -8, y: 8}
+    sprite: {fileID: 21300036, guid: a7447db1c7ae5ba4385188111b2bf7f5, type: 3}
+  - id: 19
+    x: 48
+    y: 32
+    width: 16
+    height: 16
+    xOffset: 0
+    yOffset: 15.6
+    xAdvance: 19
+    scale: 1.06
+    name: buttons_xbox_19
+    hashCode: 1529658624
+    unicode: 0
+    pivot: {x: -8, y: 8}
+    sprite: {fileID: 21300038, guid: a7447db1c7ae5ba4385188111b2bf7f5, type: 3}
+  - id: 20
+    x: 0
+    y: 16
+    width: 16
+    height: 16
+    xOffset: 0
+    yOffset: 15.6
+    xAdvance: 19
+    scale: 1.06
+    name: buttons_xbox_20
+    hashCode: 1529658730
+    unicode: 0
+    pivot: {x: -8, y: 8}
+    sprite: {fileID: 21300040, guid: a7447db1c7ae5ba4385188111b2bf7f5, type: 3}
+  - id: 21
+    x: 16
+    y: 16
+    width: 16
+    height: 16
+    xOffset: 0
+    yOffset: 15.6
+    xAdvance: 19
+    scale: 1.06
+    name: buttons_xbox_21
+    hashCode: 1529658731
+    unicode: 0
+    pivot: {x: -8, y: 8}
+    sprite: {fileID: 21300042, guid: a7447db1c7ae5ba4385188111b2bf7f5, type: 3}
+  - id: 22
+    x: 32
+    y: 16
+    width: 16
+    height: 16
+    xOffset: 0
+    yOffset: 15.6
+    xAdvance: 19
+    scale: 1.06
+    name: buttons_xbox_22
+    hashCode: 1529658728
+    unicode: 0
+    pivot: {x: -8, y: 8}
+    sprite: {fileID: 21300044, guid: a7447db1c7ae5ba4385188111b2bf7f5, type: 3}
+  - id: 23
+    x: 48
+    y: 16
+    width: 16
+    height: 16
+    xOffset: 0
+    yOffset: 15.6
+    xAdvance: 19
+    scale: 1.06
+    name: buttons_xbox_23
+    hashCode: 1529658729
+    unicode: 0
+    pivot: {x: -8, y: 8}
+    sprite: {fileID: 21300046, guid: a7447db1c7ae5ba4385188111b2bf7f5, type: 3}
+  - id: 24
+    x: 0
+    y: 0
+    width: 16
+    height: 16
+    xOffset: 0
+    yOffset: 15.6
+    xAdvance: 19
+    scale: 1.06
+    name: buttons_xbox_24
+    hashCode: 1529658734
+    unicode: 0
+    pivot: {x: -8, y: 8}
+    sprite: {fileID: 21300048, guid: a7447db1c7ae5ba4385188111b2bf7f5, type: 3}
+  fallbackSpriteAssets: []
+--- !u!21 &21340679190600088
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: TextMeshPro/Sprite
+  m_Shader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: a7447db1c7ae5ba4385188111b2bf7f5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}

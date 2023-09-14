@@ -1,0 +1,427 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 400000}
+  - component: {fileID: 11400000}
+  - component: {fileID: 11400004}
+  - component: {fileID: 114174789061552266}
+  - component: {fileID: 114132621975858560}
+  - component: {fileID: 114883556376235742}
+  - component: {fileID: 114122238960392652}
+  - component: {fileID: 114319836193731948}
+  - component: {fileID: 114495197843863554}
+  m_Layer: 0
+  m_Name: Rebindable Manager
+  m_TagString: Rebindable Manager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.1, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 516a82fd18676c242ada027fbaa6b80e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultRebindableKeys:
+  - inputName: Jump
+    input: 120
+  - inputName: RebindMenu
+    input: 114
+  - inputName: Run
+    input: 122
+  - inputName: Select
+    input: 304
+  - inputName: Start
+    input: 27
+  defaultRebindableAxes:
+  - axisName: Vertical
+    axisPosName: Forward
+    axisNegName: Backward
+    axisPos: 273
+    axisNeg: 274
+  - axisName: Horizontal
+    axisPosName: Right
+    axisNegName: Left
+    axisPos: 275
+    axisNeg: 276
+  controllerDefaultRebindableKeys:
+  - inputName: Jump
+    input: 330
+  - inputName: Run
+    input: 332
+  - inputName: Select
+    input: 336
+  - inputName: 
+    input: 0
+  - inputName: Start
+    input: 337
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cffbbe23c050b1f4b9db1fa3f2ba9938, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114174789061552266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ebed8b9bcbe7c74baba2a5e58ee0d1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114132621975858560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d87e4d6e83c81964d98cf62ccb0c959e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hudType: 0
+--- !u!114 &114883556376235742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc49eeee10fc1a64b861c47fd3593d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  usesController: 0
+--- !u!114 &114122238960392652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3a6732c9da78e04889bffbf4cfb1b5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controllerType: 0
+  Actions:
+  - Up
+  - Down
+  - Left
+  - Right
+  - Alt Up
+  - Alt Down
+  - Alt Left
+  - Alt Right
+  - Run
+  - Jump
+  - Select
+  - Start
+  - Dash
+  - Dummy
+  inputButtons:
+  - JoyXL
+  - JoyXR
+  - JoyYL
+  - JoyYR
+  - Joy4L_xbox
+  - Joy4R_xbox
+  - Joy5L_xbox
+  - Joy5R_xbox
+  - Joy6L
+  - Joy6R
+  - Joy7L
+  - Joy7R
+  - JoyLT
+  - JoyRT
+  - Joy8R
+  - Joy8L
+  - Joy9L
+  - Joy9R
+  - Joy10L
+  - Joy10R
+  - Joy4L_ps
+  - Joy4R_ps
+  - Joy5L_ps
+  - Joy5R_ps
+  keyInputsKeyboard:
+  - inputName: Up
+    input: 273
+  - inputName: Down
+    input: 274
+  - inputName: Left
+    input: 276
+  - inputName: Right
+    input: 275
+  - inputName: Alt Up
+    input: 119
+  - inputName: Alt Down
+    input: 115
+  - inputName: Alt Left
+    input: 97
+  - inputName: Alt Right
+    input: 100
+  - inputName: Run
+    input: 122
+  - inputName: Jump
+    input: 120
+  - inputName: Select
+    input: 304
+  - inputName: Start
+    input: 27
+  - inputName: Dash
+    input: 274
+  - inputName: Dummy
+    input: 0
+  keyInputsXbox360:
+  - inputName: Run
+    input: 352
+  - inputName: Jump
+    input: 350
+  - inputName: Select
+    input: 356
+  - inputName: Start
+    input: 357
+  - inputName: Dummy
+    input: 0
+  digibuttonsXbox360:
+  - inputName: Up
+    DigiInput: Joy7R
+    pressed: 0
+    down: 0
+    up: 0
+  - inputName: Down
+    DigiInput: Joy7L
+    pressed: 0
+    down: 0
+    up: 0
+  - inputName: Left
+    DigiInput: Joy6L
+    pressed: 0
+    down: 0
+    up: 0
+  - inputName: Right
+    DigiInput: Joy6R
+    pressed: 0
+    down: 0
+    up: 0
+  - inputName: Alt Up
+    DigiInput: JoyYR
+    pressed: 0
+    down: 0
+    up: 0
+  - inputName: Alt Down
+    DigiInput: JoyYL
+    pressed: 0
+    down: 0
+    up: 0
+  - inputName: Alt Left
+    DigiInput: JoyXL
+    pressed: 0
+    down: 0
+    up: 0
+  - inputName: Alt Right
+    DigiInput: JoyXR
+    pressed: 0
+    down: 0
+    up: 0
+  - inputName: Dash
+    DigiInput: Joy10L
+    pressed: 0
+    down: 0
+    up: 0
+  keyInputsSwitchPro:
+  - inputName: Run
+    input: 354
+  - inputName: Jump
+    input: 351
+  - inputName: Select
+    input: 360
+  - inputName: Start
+    input: 361
+  - inputName: Dash
+    input: 359
+  - inputName: Dummy
+    input: 0
+  digibuttonsSwitchPro:
+  - inputName: Up
+    DigiInput: Joy6R
+    pressed: 0
+    down: 0
+    up: 0
+  - inputName: Down
+    DigiInput: Joy6L
+    pressed: 0
+    down: 0
+    up: 0
+  - inputName: Left
+    DigiInput: Joy5R_xbox
+    pressed: 0
+    down: 0
+    up: 0
+  - inputName: Right
+    DigiInput: Joy5R_ps
+    pressed: 0
+    down: 0
+    up: 0
+  - inputName: Alt Up
+    DigiInput: JoyYR
+    pressed: 0
+    down: 0
+    up: 0
+  - inputName: Alt Down
+    DigiInput: JoyYL
+    pressed: 0
+    down: 0
+    up: 0
+  - inputName: Alt Left
+    DigiInput: JoyXL
+    pressed: 0
+    down: 0
+    up: 0
+  - inputName: Alt Right
+    DigiInput: JoyXR
+    pressed: 0
+    down: 0
+    up: 0
+  keyInputsPS4:
+  - inputName: Run
+    input: 350
+  - inputName: Jump
+    input: 351
+  - inputName: Select
+    input: 358
+  - inputName: Start
+    input: 359
+  - inputName: Dash
+    input: 357
+  - inputName: Dummy
+    input: 0
+  digibuttonsPS4:
+  - inputName: Up
+    DigiInput: Joy8R
+    pressed: 0
+    down: 0
+    up: 0
+  - inputName: Down
+    DigiInput: Joy8L
+    pressed: 0
+    down: 0
+    up: 0
+  - inputName: Left
+    DigiInput: Joy7L
+    pressed: 0
+    down: 0
+    up: 0
+  - inputName: Right
+    DigiInput: Joy7R
+    pressed: 0
+    down: 0
+    up: 0
+  - inputName: Alt Up
+    DigiInput: JoyYR
+    pressed: 0
+    down: 0
+    up: 0
+  - inputName: Alt Down
+    DigiInput: JoyYL
+    pressed: 0
+    down: 0
+    up: 0
+  - inputName: Alt Left
+    DigiInput: JoyXL
+    pressed: 0
+    down: 0
+    up: 0
+  - inputName: Alt Right
+    DigiInput: JoyXR
+    pressed: 0
+    down: 0
+    up: 0
+  tmpKeyInputs: []
+  tmpDigiButtons: []
+  JoyXL: 0
+  JoyYL: 0
+  Joy6L: 0
+  Joy7L: 0
+  JoyLT: 0
+  JoyXR: 0
+  JoyYR: 0
+  Joy6R: 0
+  Joy7R: 0
+  JoyRT: 0
+  Joy4L_xbox: 0
+  Joy4R_xbox: 0
+  Joy5L_xbox: 0
+  Joy5R_xbox: 0
+  Joy4L_ps: 0
+  Joy5L_ps: 0
+  Joy4R_ps: 0
+  Joy5R_ps: 0
+  debug: 0
+--- !u!114 &114319836193731948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e333d62bb86fa642a2f675a97b5d4c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114495197843863554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aeeb303e018eaf4a93fbb706df40536, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

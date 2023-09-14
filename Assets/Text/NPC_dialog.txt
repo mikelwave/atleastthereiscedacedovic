@@ -1,0 +1,780 @@
+[?, ] I have nothing important to say.
+
+[G] npc text
+more npc text
+[C,Čeda]Čeda text
+more Čeda text
+
+Chat ends when reached last line, or the next line is empty
+
+type inside <> to use.
+EXAMPLE:
+
+Text <shake> more text.
+
+Commands:
+
+shake
+color red
+color blue
+color white
+event
+fast text
+slow text
+normal text
+fake type
+skip line
+normal sound
+alt sound
+no sound
+play special sound
+new line
+toggle sound
+shakecam [magnitude,time]
+pause music unpause music
+DIALOG:
+
+Babushka
+
+[B,Babushka] Čeda, my grandson,<new line>where are you going?
+[C,Čeda] The depths of Hell, Babushka, I must go become<new line>King of Counter Strike 1.6!
+[B,Babushka] Ooh, you kids and your<new line>adventures through Hades<new line>to be best at shooting game.
+Well, remember to<new line><color red>eat your discs<color white>.
+You can grab disc by holding<new line>"<color red><run key><color white>" while approaching disc.
+Once disc is in your hand,<new line>press "<color red>UP<color white>" to eat it for quick<new line>powerup on the spot.
+[C,Čeda] Baba, what the fuck!<new line>Why you talk like<new line>instructional manual?!
+[B,Babushka] I only wanted to help.
+[C,Čeda] Go flush favorite book in<new line>toilet, bre.
+I don't need no fucking<new line>instructions on how to eat.
+
+Intro
+
+[1,Andre] Are you sure you want to<new line>continue on this journey?
+[C,Čeda] Andre, this is not shitty<new line>journey, this is conquest!
+I am going to conquer Hell and<new line>Counter Strike itself!
+[1,Andre] Okay, but please bring back<new line>money, there is no food,<new line>if I can't eat food I will die.
+[C,Čeda] Yes I know, I'll collect a<new line>few hundred <color red>golden teapots<color white><new line>on my way there.
+I'm sure that's enough money<new line>to pay for shit.
+[2,Miroslav] Here!<new line>Grab my <color red>mixtape<color white>!<new line>For Luck!
+[C,Čeda] Miroslav, this is <color red>Floppy Disk<color white>,<new line>not mixtape.
+[2,Miroslav] <new line>Aaaaaaaaaaaaaa.
+[C,Čeda] I'll keep it anyway,<new line>looks useful.
+[3,Djole] I am stinky.
+[C,Čeda] Yes we fucking know, Djole,<new line>this is the 100th time you've<new line>said it since we met you.
+Please say something useful<new line>for once!
+[3,Djole] You can press "<color red>LEFT<color white>" and<new line>"<color red>RIGHT<color white>" to move.
+Press "<color red>UP<color white>" to <color red>talk<color white> to<new line>someone when<new line><color red>in front of them<color white>...
+You can also <color red>jump<color white> by pressing<new line>"<color red><jump key><color white>", <color red>sprint<color white>/<color red>pick things up<color white> by<new line>holding "<color red><run key><color white>"...
+And while in the air,<new line>press "<color red>DOWN<color white>" to do an<new line><color red>air dash<color white>.
+You can do lots of cool things<new line>with this maneuver.
+[C,Čeda] <shake>Djole, how the fuck do you<new line>know all this shit?!
+[3,Djole] I learned it at school.
+[C,Čeda] That's not... ah fuck it,<new line>I'm getting impatient,<new line>let me move around already!
+[1,Andre] <new line>              Very well...<skip line><fake type><fake type><fake type><fake type><fake type><fake type><fake type><fake type><fake type><event>
+[?, ] <hide box><cant skip><fake type><fake type><fake type><fake type><fake type><fake type><fake type><fake type><fake type><fake type><fake type><fake type><fake type><event><fake type><fake type><fake type><fake type><fake type><fake type><fake type><fake type><fake type><fake type><fake type><fake type><fake type><fake type><fake type><fake type><fake type><fake type><fake type><fake type><fake type><fake type><fake type><fake type><skip line>
+[C,Čeda] <show box><can skip><new line>           What the <shake>fuck?!
+[?, ] <skip line> <event>
+
+
+Klempodrome Intro
+
+[K,Klempodrome] Hello, Čeda. I went to the<new line>bus store and stole this bus!
+[C,Čeda] Good! Our trip to hell will be<new line>much quicker now!
+[K,Klempodrome] I will be driving you<new line>between "worlds"...
+Though I cannot skip these<new line>worlds until defeat<new line>the Boss of that world.
+That way I can drive you<new line>all there safely.
+[C,Čeda] Okay, I guess it won't be<new line>as fast as I thought.
+[K,Klempodrome] I've also found this<new line><color red>Floppy Drive<color white>. I can use this<new line>to save your progress.
+That way you don't have to go through the whole journey<new line>in one sitting.
+[C,Čeda] What does "in one sitting"<new line>mean?
+[K,Klempodrome] I don't know, I just heard that phrase somewhere.
+Anyway, If you want your<new line>game saved, you'll have to<new line>find <color red>2 Floppy Disks<color white>.
+That should be plenty of disk<new line>space to save all this data.<event>
+[K,Klempodrome] So, are you ready to begin<new line>the journey?<options>
+Ofcorse, bre! There is nothing to fucking do here.|Jebote, I haven't prepared yet. 
+
+Klempodrome (Option 1)
+
+[K,Klempodrome] Then get in, watch out for<new line>old chewing gum on the<new line>ground though.
+[C,Čeda] But it's everywhere.
+[K,Klempodrome] <keep cutscene>I know.
+[?, ] <event><event><skip line>
+
+Klempodrome (Option 2)
+
+[K,Klempodrome] I'll be waiting here.
+
+Klempodrome
+
+[K,Klempodrome] <new line>Ey, what'd you like me to do?<options>
+Take me somewhere else|Save Game (Needs 2 Floppy Disks)|Go fuck yourself. 
+
+
+Klempodrome  (Take me somewhere else)
+
+[K,Klempodrome] Here is the map,<new line>where do you wish to go?
+
+
+Klempodrome (Save Game Have enough disks)
+
+[K,Klempodrome] Alright, one save state<new line>coming up!
+[?, ] <cant skip><hide box><event><slow text><fake type><fake type><fake type><fake type><fake type><fake type><fake type><fake type><fake type><fake type><normal text><skip line>
+
+Klempodrome (Save Game Don't have enough disks)
+
+[K,Klempodrome] <shake>I can't save all this data,<new line>you need to find more disks!
+
+Klempodrome (Go fuck yourself.)
+
+[K,Klempodrome] Oh.
+
+
+
+Genie
+
+[G,Genie] Weird red head man!<new line>Can it be over here?
+[C,Čeda] What? What are you looking<new line>for, bre?
+[G,Genie] I need to get my lamp back,<new line>dude, or I will die!
+[C,Čeda] Uhh, I have teapots,<new line>lots of them.<new line>Is that any good?
+[G,Genie] Teapots?<new line>No that won't do at all!<new line>A genie needs a lamp.
+[C,Čeda] Okay, fuck you,<new line>I hope you never find it<new line>and die.
+
+
+Bear
+
+[C,Čeda] <shake>HEY! Hey, you there, Bear!<new line>I'm in hell, right?<new line>That's where I am??
+[B,Bear] You sure are.
+[C,Čeda] Why isn't everything on fire?<new line>Where's the sounds of<new line>human agony, bre?
+[B,Bear] Oh right, that was the case<new line>3 years ago, but then the meme took over.
+[C,Čeda] The meme? Is this...<new line>meme what is causing hell<new line>to be not hell?
+[B,Bear] Basically, yeah.
+[C,Čeda] Hmmm, I do not know how<new line>comfortable I am with becoming the ruler of hell...
+...if this is what it became.
+[B,Bear] I would have at least taken<new line>care of the bees had I<new line>not lost my machine gun.
+[C,Čeda] If you had machine gun,<new line>I would have killed you and<new line>taken it from you.
+[B,Bear] Well don't I feel lucky.
+
+
+Harold
+
+[H,Harold] Yo.
+[C,Čeda] Do not fucking Yoyo me,<new line>what is this tower, bre.
+[H,Harold] This is the tower<new line>I was bouncing around in.
+But it was recently taken over by a bunch of creatures.
+[C,Čeda] You think I care?
+[H,Harold] If only someone with<new line>murderous tendencies could go<new line>in there and clean it up.
+[C,Čeda] Did you say more things to<new line>kill? Well when you put it<new line>that way, I'll be happy to go.
+[H,Harold] Sweet, just keep in mind that<new line>in the tower it's a bit warmer<new line>than it is outside.
+[H,Harold] So <color red>time will unfreeze<color white>,<new line>and you don't have much of it.
+[C,Čeda] Yes yes, I don't care, there<new line>will be some kind of <color red>clock<new line>to extend time<color white> anyway.
+[C,Čeda] There always is.
+[H,Harold] One last thing you should<new line>remember:
+[H,Harold] <color red>You can only jump through<new line>stone platforms<color white>.
+[C,Čeda] I do not know what the fuck<new line>that means.
+
+
+Disco Dave
+
+[D,Disco Dave] What's goin' on?
+[C,Čeda] What the fuck do you think is<new line>going on, bre. I thought this<new line>tower would never end.
+[D,Disco Dave] It used to never end,<new line>but somthin' funky caused it<new line>to stop looping.
+[C,Čeda] How the fuck did you even<new line>get up here?
+[D,Disco Dave] By stayin' alive.
+[C,Čeda] You and <color red>your friend<color white> down there<new line>are some crazy motherfuckers,<new line>I respect that.
+Now how do I get out of<new line>this place, bre?
+[D,Disco Dave] <color red>Goal's just ahead<color white>, Dude,<new line>just watch your step.
+[C,Čeda] Groovy.
+
+Schinger (incompleted band)
+
+[S, Schinger] You still need to go find my friends!
+[C,Čeda] Did I fucking ask you anything!?
+
+
+Schinger (All Band members)
+
+[S, Schinger] Wow, thank you friend, the boysch are all here.
+[C,Čeda] Yeah I don't fucking care, give me waffle.
+[S, Schinger] Yes, ofcorsche, here you go, friend!
+
+
+
+Drummischt and Guitarischt
+
+[C,Čeda] You there! Your fucking lead singer says he wants you two in band.
+If you don't go now, I'll punch you both in the dick.
+Yes, with one punch.
+[D, Drummischt] Yes, I schee. I'll be schure to go to him.
+[C,Čeda] Fuck, the whole sch thing is annoying.
+[G, Guitarischt] okay, sure. I guess we shouldn't have left him all alone there.
+[C,Čeda] Wait, why aren't you-
+ah, fuck it.
+
+
+
+Young Čeda
+
+[Y, Young Čeda] What? Who are you?
+[C,Čeda] You must be me from years <new line>ago, I don't remember having<new line>American accent, though.
+[Y, Young Čeda] Anyway, I have returned from<new line><color red>the great battle<color white> and killed the<new line><color red>Miroslav leader<color white>.
+[C,Čeda] <shake><shakecam 0.1 0.3>You fuck! <color red>Miroslav<color white> is<new line><color red>Miroslav leader<color white>. You killed<new line><color red>Elite Miroslav<color white>, <shakecam 0.1 0.4><fast text>Motherfucker!<normal text>
+[Y, Young Čeda] <shake><shakecam 0.1 0.2>Oh crap! <new line>Thanks for telling me!<new line>I'll be sure to tell Djole.
+[C,Čeda] Fuck, don't remember me of how<new line>he looked like back then, bre.
+
+
+Voodoo Dick Salesman
+
+[V, Voodoo Dick Man] Hello sir, would you like to buy<new line>something from me?
+[C,Čeda] Yes, I am want to buy this<new line>big kurton.<new line>How much?
+[V, Voodoo Dick Man] 10 teapots.
+[C,Čeda] <shake>10 TEAPOTS?!<new line><fast text>YOU CAN SUCK MY DICK<new line>FOR 10 TEAPOTS! 
+[V, Voodoo Dick Man] <normal text>Okay sir, I want you and<new line>your dumbass shoes out of<new line>my sight!
+[C,Čeda] <fast text>What the fuck did you say<new line>about my babouches?!
+[V, Voodoo Dick Man] <normal text>Oh nothin'.<new line>I'm gonna go home now,<new line>and wash my paprikas!
+So <shake>fuck off you Tord from<new line>Eddsworld lookin' ass!
+
+Dr Beanson
+
+[D,Dr Beanson] Hello, it is I, Dr Beanson the<new line>one of a kind doctor who brings<new line>you this message.
+You got teapots? Well they're<new line>no good if you don't have the<new line>hot water and the biscuits.
+If I had water I'd use that<new line>water to make vegetable soup<new line>for Little guy 1.
+And if I had a biscuit, I'd use<new line>it for breakfast while I look<new line>at the THX logo.
+[C,Čeda] <shake><shake cam 0.1 0.2>Finally, <fast text>someone who speaks<new line>english that I can understand!<normal text>
+
+
+
+Rage Bot
+
+[R, Rage Bot] Americans! The world is going<new line>to end today!
+[C,Čeda] <shake>Who the fuck are you calling<new line>American, you filthy machine?!
+[R, Rage Bot] Uh, where are you from then?
+[C,Čeda] <shake>Serbia, bre! And soon I am<new line>going to be king of<new line>Counter Strike,<fast text> too!
+[R, Rage Bot] <normal text>My boss, The Shadow Master,<new line>sent me to tell you that if you<new line>continue your quest<fast text>...
+...<normal text>I will have to use force and<new line>shoot my lazer, I'm serious.
+[C,Čeda] <pause music><alt sound><shakecam 0.1 1>If you don't shut the <shake>fuck up, <shakecam 0.1 1>I'm gonna put a <shake>fuckin' boot<new line><shakecam 0.1 1>up through your head you <shake>fuck.<normal sound>
+[R, Rage Bot] <shakecam 0.08 0.3>I'm not gonna risk testing<new line>that statement, so I'll<new line>let you go.
+
+
+
+Miroslav (First Time)
+
+[M, Miroslav] Hey Čeda, remember when every other person was spoofing slow-motion scenes from The Matrix?
+[C,Čeda] You are tool, you know this?
+[M, Miroslav] Oh so you want a fight, huh?
+[C,Čeda] Yes, actually, I can't wait to punch you in your face!
+[M, Miroslav] Well I have some good news! For only 18 sausages, you can fight in my arena, where you can fight against my army of Miroslavs.
+[C,Čeda] Very well!
+
+
+Miroslav
+
+[M, Miroslav]So you wanna fight, huh?
+
+{Let's go already! (Needs 25 Golden Sausages)}
+{Fuck off.}
+
+
+Miroslav (Accept)
+
+[M, Miroslav] Very well, may Mir Man have mercy on your soul, as you are about to fight Miro De Niro's army!
+
+
+Miroslav (Decline)
+
+[M, Miroslav] okay..
+
+
+Miroslav (Player failed)
+
+[M, Miroslav] Well, looks like my army was too good for you! Get outta here! Come back when you're better at fightin'!
+[C,Čeda] Fuck you, you fuck!
+
+Miroslav (Beat Arena Mode)
+
+[M, Miroslav] Wow, you wiped out my army.
+[C,Čeda] Yes, now I will punch you in the cunt!
+[M, Miroslav] Wait wait wait! Don't hit me, mane! I have a Key trophy thing for you! Take it and don't punch me!
+
+
+
+
+Andre (First Time)
+
+[A, Andre] Hello my friend, why do you come to my home.
+[C,Čeda] Listen here you ball of piss! I wish to earn that trophy/key of yours, how do I get it?
+[A, Andre] Ah well, I will need you to do a mission for me, one for each world. A small challenge if you will.
+[C,Čeda] Sounds good to me. What do you got?
+[A, Andre] Ah, but first, I need three golden sausages per mission.
+[C,Čeda] Ofcorse you do..
+
+
+Andre
+
+[A, Andre] So, are you ready for your mission?
+
+{Yes, Here are sausages (Needs 3 Golden Sausages)}
+{Don't you think you've had enough sausages?}
+
+
+Andre (Accept)
+
+[A, Andre] Very well, here is your mission:
+
+World 1: In the second level of the Boring World, find all secret warp zones, simple, no?
+
+
+Andre (Decline)
+
+[A, Andre] Looks like you have failed your mission.
+Well nobody got through in life by just giving up, chop-chop, get back to it!
+
+
+Andre (Mission completed)
+
+[A, Andre] Hoho, you did well! That's one task off the list!
+Now that you've completed that task, you get to try the next one!
+
+
+Andre (Already did mission)
+
+[A, Andre] Oh, so you did! It is very good! Doing your job in advance is very admirable, have some extra lives!
+Now that you've completed that task, you get to try the next one!
+
+
+Andre (Final Mission completed)
+
+[A, Andre] Well friend, you did all that I asked for, and you only wasted god knows how many sausages.
+As your reward, I will give you this key trophy, it very good! I don't use it much, you can have it!
+
+
+
+
+Djole (First Time)
+
+[C,Čeda] Oi, Djole, I need that key trophy thing you keep, it looks like something good will happen if I get all of them!
+[D, Djole] They are used to unlock a special place in hell, just for you.
+I use it as a fork when I am eating soup.
+[C,Čeda] Oh I get it, the joke is, not only do you use such a powerful artifact as something stupid as a fork
+But also you say you use for eating soup, and you don't use forks to eat soup.
+How very Random xd.
+[D, Djole] I can give you some, but only if you answer me these riddles three..
+[C,Čeda] Okay...
+[D, Djole] Actually, it's closer to a dozen riddles. But if you answer them, you can get the piece of key.
+All I ask is if you give me three golden sausages per try.
+[C,Čeda] This is ridiculous amount of money just to answer some questions and win a prize.
+This is just like Television Quiz!
+
+
+Djole
+
+[D, Djole] Are you ready for your test?
+
+{Go ahead. (Needs 18 sausages)}
+{Fuck you, this is not school!}
+
+
+Djole (Accept)
+
+[D, Djole] Okay, let's go!
+
+Q1: (nothing yet)
+
+
+Djole (Decline)
+
+[D, Djole] Okay, I'll go back to eating soup.
+
+
+Djole (Won)
+
+[D, Djole] Conconstipations! You've Winner! I'm very happy, and will give you my key piece. Good Luck!
+
+
+Djole (Lost)
+
+[D, Djole] Oops, sorry, you ran out of tries. Join us next time!
+
+
+Ben
+
+[C,Čeda] Hey you! I have some<new line>questions for you!
+[B, Ben] Blub blub...
+[C,Čeda] What?
+[B, Ben] It's true what they say, home<new line>is where heart is. Glub glub.
+[C,Čeda] Fuck you.
+
+
+Stinky
+
+[S, Stinky] Hello, I am Stinky.
+[C,Čeda] <shakecam 0.06 0.3>Fuck, not again!
+[S, Stinky] What?
+[C,Čeda] When I become king of<new line>Counter Strike, I will come<new line>back and kill.
+[S, Stinky] <shakecam 0.02 0.3>Huh, Why?
+[C,Čeda] Only Djole is allowed to be<new line>stinky, you motherfuck.
+[S, Stinky] Why are you saying these<new line>things to me.
+[C,Čeda] Do not speak to me, filth.
+
+
+
+Best Friend
+
+[C,Čeda] Hello, stupid creature, where<new line>is nearest exit from<new line>this place, bre.
+[B, Best Friend] <pause music><shakecam 0.08 0.5><alt sound>*screeching noise*
+[C,Čeda] <normal sound>I think it is in pain.
+Oh well, not my problem.
+
+
+
+Sven
+
+[C,Čeda] Hello humble sheep, have you<new line>drowned anyone recently?
+[S, Sven] <pause music><slow text>Her mouth moves, but <fake type 6><fast text><shakecam 0.05 0.3>nothing<new line>is heard from it.<slow text>
+<slow text>One large <fake type 6><fast text><shakecam 0.075 0.3>spaceship<slow text> shows up<new line>in the sky. It appears from<new line>out of <fake type 6><fast text><shakecam 0.1 0.3>nowhere.
+<slow text>A <fake type 6><fast text><shakecam 0.125 0.3>being <slow text>descends from <fake type 6><fast text><shakecam 0.15 0.3><new line><fake type 6>the spaceship.
+[C,Čeda] <normal text>You look like you have been<new line>traumatized, I hope I don't<new line>run into whatever did that.
+
+Jumpscare the Skeleton
+
+[J, Jumpscare] You there, I need you to do me a favour.
+[C,Čeda] <shake>Holy shit, a talking<new line>dead person!
+[J, Jumpscare] Yeah, look buddy.
+Some green doodle creature<new line>walked by and stole some kind<new line>of dark shape-shifting energy.
+Are you by any chance related<new line>to this thing?
+[C,Čeda] <shakecam 0.08 0.3><fast text>Yes<normal text><fake type 6>, I'm here to kill him!
+[J, Jumpscare] Okay good, 'cus I'm sure as<new line>shit not gonna bother anymore.
+Not after last time they<new line>invited me to assassinate<new line>some targets...
+and then they just cance-<skip line>
+[C,Čeda] <shake><shakecam 0.1 0.3>Wait! <fast text>You have Gun<normal text>!<new line>You are very cool skeleton,<new line><shakecam 0.06 0.3>give me gun!
+[J, Jumpscare] I already gave a spare<new line>gun to a knight.
+[C,Čeda] Well fuck you.
+
+Corpse
+
+[C,Čeda] Who the fuck are you<fast text>!<normal text>?
+[D,Corpse] I'm you from the near future.
+[C,Čeda] This sounds like a bullshit.
+[D,Corpse] Yes. You're absolutley right,<new line>I'm pulling your leg.
+I'm just a copy of you, but<new line>mangled and I'm <color blue>blue<color white>.
+<color blue>Da ba dee da ba die<color white>.
+[C,Čeda] You look pretty happy<new line>about that, I respect that.
+[D,Corpse] Will you help me? I've been- <skip line>
+[C,Čeda] <shake><shakecam 0.1 0.2>No.
+
+Tom Cruise
+
+[C,Čeda] Oh fuck, who are you.
+[T,Tom Cruise] They took away my website.
+[C,Čeda] Listen, I just want to get<new line>through this level, the music<new line>is hurting me.
+[T,Tom Cruise] You're the guy who killed<new line><color red>Mega Satan<color white>, right?
+[C,Čeda] Yes I did.
+[T,Tom Cruise] Looks like the prophesies were<new line>right after all. <color red>Mega Satan<color white> will<new line>be resurrected one day.
+And when that happens, there<new line>will be a war between the <color red>Anti-<new line>Crust<color white> and <color red>Zigzag the Sorcerer<color white>.
+[C,Čeda] You're a fucking psycho, bre,<new line>I'm not talking to you<new line>anymore.
+
+
+
+Stan
+
+[C,Čeda] Hello, Skateboarder,<new line>what are you doing here?
+[S,Stan] Sorry, <fake type 6><slow text><pause music>I'm Dead...
+...inside.
+[C,Čeda] <unpause music><normal text><shake><shakecam 0.08 0.2>Ah, <fast text>well my job is done here,<normal text><new line>then!
+
+
+
+Paul
+
+[P,Paul] Wow dude, you look like crap!
+[C,Čeda] <shakecam 0.1 0.1>Had it not been for this game's low budget I would have killed you.
+[P,Paul] That's a real bummer, you want some pizza in these trying<new line>times?
+[C,Čeda] <shake>Fuck that shit, I eat real food! <shakecam 0.05 0.1>Like cold leftover meat, bre!
+[P,Paul] 'Aright dude, you do you.
+[C,Čeda] They took my fucking eyes.
+
+
+BRO
+
+[C,Čeda] Okay, what witty dialogue do<new line>you have?
+[B, BRO] <no sound>*Grunt*
+[C,Čeda] <normal sound>That uh... was not really<new line>funny.
+[B, BRO] <no sound>*Grunt*
+[C,Čeda] <normal sound>...<shake>ah who am I kidding, it is<new line>pretty funny!
+I bet your main menu music is<new line>even funnier!
+
+
+Sauce Man
+
+[C,Čeda] What the fuck are you.
+[S, Sauce Man] Have you ever attacked a tank<new line>with your bare hands?
+[C,Čeda] Pfft, You think this is my<new line>first time starting a world war,<new line>pussy?
+
+
+Elvis
+
+[C,Čeda] <shake><shakecam 0.2 0.3>What the FuCK!<fake type 2><fast text><new line>Upside down face Elvis!?<fake type 15><new line><shakecam 0.1 0.4>I thought it was only myth!<normal text>
+[E, Elvis] <no sound>Thank you very much.
+[C,Čeda] <normal sound><shakecam 0.1 0.2>Wow! that was worth all the<new line>trouble it took to get to<new line>this fucking spot.
+
+Steven
+
+[C,Čeda] Hey stupid, why you have thing<new line>growing out of your head?
+[S,Steven] That's my friend Steven, he<new line>tells me the future in exchange<new line>for living in my head.
+[C,Čeda] Sounds cool, I should do that<new line>with my friends.
+
+Duane
+
+[D, Duane] <one shot sound on><pause music><alt sound><slow text>Oh<normal text>....
+<slow text>So<normal text>.... <slow text>someone has made it<new line>here<normal text>....
+<slow text>Are you here to stop<normal text>.... <color red>him<color white><normal text>?
+[C,Čeda] <one shot sound off><normal sound>Can you please talk faster.
+[D, Duane] <one shot sound on><alt sound>You wish to stop the core<new line>of the <color red>meme-disease<color white>, no?
+[C,Čeda] <one shot sound off><normal sound>Wish? Wishing is for pussies,<new line><shake><shakecam 0.2 0.3><fast text>I'm killing that motherfuck!
+[D, Duane] <one shot sound on><alt sound><normal text>Well be careful...he's strong...<new line>and he's certainly had time to<new line>train.
+[C,Čeda] <one shot sound off><normal sound>How much trains could he<new line>possibly have? I didn't see any<new line>train tracks, bre.
+[D, Duane] <one shot sound on><alt sound>That's not what I meant when<new line>I said 'train'....
+[C,Čeda] <one shot sound off><normal sound>You sure do talk fancy for<new line>someone that looks so stupid.
+[D, Duane] <one shot sound on><alt sound>That's true, I don't know what<new line>happened to me....
+
+All NPCs (MariObama)
+
+[?, ] <new line> (They only speak to gopniks<fast text>.<normal text>)
+
+
+Duane (MariObama)
+
+[D, Duane] <one shot sound on><pause music><alt sound>...
+[D, Duane] Wait a minute<fast text>...<normal text><fake type 6> It's <shake><shakecam 0.1 0.2><color red>you<color white>!
+[D, Duane] You finally made it!
+[D, Duane] Everyone is playing your game<new line>now!
+[D, Duane] ...Well, it's not your game<new line>really, but close enough<fast text>...<normal text>
+[D, Duane] How does it feel to have<new line>finally made it after all<new line>these years?
+[M, MariObama] ......
+[D, Duane] Oh right, you don't speak<fast text>...<normal text>
+[D, Duane] Well, hey.<new line><fake type 6>You'll finally get your<new line><color red>tie<color white> back<fast text>...<normal text><one shot sound off><normal sound>
+
+Miroslav (Apple Piece)
+
+[M, Miroslav] Hey Čeda, remember when every person was spoofing slow-<new line>motion scenes from Matrix?
+[C,Čeda] <shakecam 0.05 0.2>You are tool, you know this?
+[M, Miroslav] Why are you barging into<new line>my house for?
+[C,Čeda] I'm here for apple slice, bre.<new line><shake><shakecam 0.1 0.5><fast text>Give it to me!<normal text>
+[M, Miroslav] You got the 15 Sausages?<options>
+Let's go already! (Needs 15 Golden Sausages)|Fuck off. 
+
+
+Miroslav (Accept)
+
+[M, Miroslav] Nice, Here's your apple,<new line>may <color blue>Mir Man<color white> protect you!
+[C,Čeda] I don't think he will.
+
+
+Miroslav (Accept but not enough)
+
+[M, Miroslav] <shake><shakecam 0.1 0.3>Hey, what's this bullshit, man!
+<shakecam 0.05 0.3>That ain't enough sausages!
+[C,Čeda] Shit fine, I'll go find some<new line>more!
+
+Miroslav (Decline)
+
+[M, Miroslav] <slow text><pause music>Okay<normal text>...
+
+
+Miroslav (After giving apple)
+
+[M, Miroslav] Hey, I'm all out of magical<new line>blue space apples, okay.
+
+
+Djole (Apple Piece)
+
+[C,Čeda] <shake><shakecam 0.1 0.2>Oy, Djole, <fast text>I need that<new line>apple slice!<normal text>
+[D, Djole] Not until you answer me these questions three!
+[C,Čeda] <shakecam 0.1 0.3>Just give me the apple slice!
+[D, Djole] All three questions are:<new line>"Do you have 15 Sausages<fast text>?"<normal text><options>
+Here, now leave me alone. (Needs 15 Golden Sausages)|Not yet. 
+
+
+Djole (Accept)
+
+[D, Djole] That's good value in gold,<new line>here's your part of this<new line>exchange!
+[C,Čeda] What the fuck is '<color red>exchange<color white>'?
+[D, Djole] I dunno, I heard it in english<new line>class once.
+[C,Čeda] <shakecam 0.1 0.3>What the fuck is<new line>'<color red>english class<color white>'<fast text>!?<normal text>
+
+
+Djole (Accept but not enough)
+
+[D, Djole] I may have gotten 13 F- in<new line>math in one day, but I can<new line>still count up to 15.
+[C,Čeda] <shake><shakecam 0.1 0.3>Fuck, Education has foiled my plans again!
+
+
+Djole (Decline)
+
+[D, Djole] Yes I knew this.
+
+
+Djole (After giving apple)
+
+[D, Djole] No I don't know what english<new line>class is too.
+
+
+Andre (Apple Piece)
+
+[A, Andre] Hello, Čeda.
+[C,Čeda] Fuck you, I'll get to point, you want sausages, I want apple,<new line>how much for it?
+[A, Andre] I want 15 Sausages for<new line>the Blue Apple.<options>
+Very well, here you go. (Needs 15 Golden Sausages)|Well shit, I don't have that much. 
+
+
+Andre  (Accept)
+
+[A, Andre] Yum, I always have room for<new line>some expensive food.
+[C,Čeda] Yeah no shitting, you just ate fucking gold.
+[A, Andre] It's a refined taste.
+[C,Čeda] No, you buy hats with refined,<new line>idiot!
+
+
+Andre  (Accept but not enough)
+
+[A, Andre] Not enough sausages here,<new line>I'm afraid.
+[C,Čeda] <shakecam 0.1 0.1>These things don't grow<new line>on tree, you know!
+
+
+Andre  (Decline)
+
+[A, Andre] Okay, here's plan: You go find more sausages<fast text>...<normal text>
+And in the meantime<new line>I'll play Croc.
+[C,Čeda] <shake><shakecam 0.1 0.1><fast text>I collected golden teapots<new line>because of you!<normal text>
+
+
+Andre (After giving apple)
+
+[A, Andre] With all this sausage energy,<new line>I can finally make more<new line>pivot videos.
+
+Babushka (After Mega Satan)
+
+[C,Čeda] <shake><shakecam 0.1 0.2>Baba! <fast text>I have become King of<new line>Counter Strike 1.6!<normal text>
+[B,Babushka] That's great, was it worth it?
+[C,Čeda] <shakecam 0.05 0.5>No, because hell is ruined and<new line>looks like shit!
+[B,Babushka] Alright grandson,<new line>what will you do now?
+[C,Čeda] <shakecam 0.05 0.5>I have new plan!<new line>This one will work for sure!
+[C,Čeda] I will eat <color blue>apple<color white>, that will solve all my problems.
+[B,Babushka] Okay sonny, have fun.
+
+Babushka (After MariObama)
+
+[C,Čeda] <shake><shakecam 0.1 0.2><fast text>I have killed the meme<new line>responsible for my hell<new line>problems!
+[B,Babushka] <pause music><slow text>What is a meme?<normal text>
+[C,Čeda] <unpause music><shake><shakecam 0.1 0.2>It's fucking dead, that's<new line>what it is.
+[C,Čeda] And now I have everything<new line>I ever wanted!
+[B,Babushka] Isn't that what you said when<new line>you started world war 5?
+[C,Čeda] <shake>Yes but this is even better.<new line>I won war against hell and<new line>beyond!
+[C,Čeda] If Djole was here he'd do a<new line>victory squeal, but I'm not<new line>doing that shit.
+[B,Babushka] Well, what are you going to do<new line>now?
+[C,Čeda] Kill everything in hell until it<new line>gets boring I suppose.
+[C,Čeda] I dunno, I just wanted to be<new line>king of Counter Strike and<new line>kill things.
+
+Klempodrome (World map)
+
+[K,Klempodrome] <new line>Ey, what'd you like me to do?<options>
+Take me somewhere else|Take me to the shop|Save Game (Needs 2 Floppy Disks)|Go fuck yourself. 
+
+Klempodrome (Take me to shop.)
+
+[K,Klempodrome] Very well, back home we go!
+[?, ] <cant skip><hide box><event><slow text><fake type 999><normal text><skip line>
+
+Bigfoot
+
+[C,Čeda] <shake><shakecam 0.1 0.3>Aha, I finally found bigfoot!<fast text><shakecam 0.1 0.3><new line>Tell me your secrets!<normal text>
+[B,Bigfoot] <pause music><no sound>Ug.
+[C,Čeda] <normal sound>What was that?
+[B,Bigfoot] <no sound>Ug.
+[C,Čeda] <normal sound>Well you're fucking useless,<new line>shut the fuck up.
+[C,Čeda] You're not even a real myth,<new line>like traffic lights are.
+[B,Bigfoot] <no sound>Jump good.
+[C,Čeda] <normal sound>Oh okay, there it is.
+
+Linkoln
+
+[L,Linkoln] <new line>     What will it be, partner?<options>
+Take me somewhere else|Take me to the shop|Save Game|Bye! 
+
+Linkoln  (Take me somewhere else)
+
+[L,Linkoln] Here is the map,<new line>where do you wish to go?
+
+Linkoln  (Take me to the shop)
+
+[L,Linkoln] To the shop we go!
+[?, ] <cant skip><hide box><event><slow text><fake type 999><normal text><skip line>
+
+Linkoln (Save Game)
+
+[L,Linkoln] And save we shall!
+[?, ] <cant skip><hide box><event><slow text><fake type><fake type><fake type><fake type><fake type><fake type><fake type><fake type><fake type><fake type><normal text><skip line>
+
+Linkoln (Bye!)
+
+[L,Linkoln] Farewell!
+
+[L,Linkoln] <new line>     What will it be, partner?<options>
+Take me somewhere else|Save Game|Bye! 
+
+Emily Money (Ceda)
+
+[E, Emily Money] Hey you, see this door here?<new line>It leads to a <color red>secret level<color white><new line>actually.
+[E, Emily Money] And this <color red>secret level<color white> is<new line>straight-up unfair.
+[E, Emily Money] You can go in there and beat it<new line>if you want. I don't care much.
+
+Emily Money (MariObama)
+
+[E, Emily Money] Hey, back off, buddy.<new line>This door's only for those who<new line>have beaten the final boss.
+[E, Emily Money] Also, before you ask,<new line>this is my tie.
+
+
+
+??? (Intro)
+
+[D, ???] I recognize you.<new line>We were both created around<new line>the same time<fast text>...<normal text>
+[D, ???] You want to know what could<new line>have been, right?<new line>Your true past?
+[D, ???] I can let you peek into the<new line>world where you existed.<new line>For a price.
+[D, ???] Bring me <color red>Floppy Disks<color white> and<new line><color red>Sausages<color white> and I'll give you<new line>your true past.
+
+???
+[D, ???] <new line>Choose your payment method<fast text>...<normal text><options>
+Videos (Floppy disks)|Songs (Sausages)|Bye! 
+
+??? (Videos)
+[D, ???] <cant skip><new line>       Look into your past<fast text>...<normal text>
+
+??? (Songs)
+[D, ???] <cant skip><new line>       Listen to your past<fast text>...<normal text>
+
+??? (Bye!)
+[D, ???] <new line>       I know more than you<fast text>...<normal text>
+
+Babushka (After Mega Satan, Before Mariobama)
+
+[B,Babushka] How's it going, sonny?
+[C,Čeda] Eating apple was mistake,<new line>never fucking again.
+
+Emily Money (Pre last boss)
+
+[E, Emily Money] Hey, back off, buddy.<new line>This door's only for those who<new line>have beaten the final boss.
+
+Emily Money (Post last level)
+
+[E, Emily Money] So you've beaten the <color red>secret<new line>level<color white>, huh?
+Congratulations, I guess.
+Maybe I should hire you to deal<new line>with <color red>underpaid security<color white> for me.
+
+Klempodrome (Home post final boss)
+
+[K,Klempodrome] <new line>Ey, what'd you like me to do?<options>
+Take me somewhere else|Save Game|Go fuck yourself. 
+
+Klempodrome (World map post final boss)
+
+[K,Klempodrome] <new line>Ey, what'd you like me to do?<options>
+Take me somewhere else|Take me to the shop|Save Game|Go fuck yourself. 

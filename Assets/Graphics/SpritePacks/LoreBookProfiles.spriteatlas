@@ -1,0 +1,181 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LoreBookProfiles
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 2
+      m_BuildTarget: Standalone
+      m_MaxTextureSize: 1024
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 2
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 2
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 937dcfbf60c351f43924fe752ef0b680, type: 3}
+    - {fileID: 102900000, guid: 6b2894d3e5fa5204eb692482f06ef230, type: 3}
+    - {fileID: 102900000, guid: 7a774f61b87432040bca69bdf8f61ecf, type: 3}
+    totalSpriteSurfaceArea: 1873724
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 961ac910f32c8624ea798973163c2892, type: 3}
+  - {fileID: 21300000, guid: 32e6e520901fecb4aaeb2566192eb9ba, type: 3}
+  - {fileID: 21300000, guid: f0e00f20f1e869d43bf5e1cf36f9cd83, type: 3}
+  - {fileID: 21300000, guid: 1a6109402b3778e489f5c5f6855675ab, type: 3}
+  - {fileID: 21300000, guid: 56a4d9a0fc634b54f8b1330930417e04, type: 3}
+  - {fileID: 21300000, guid: e0ae00c02c9ac144a922d7c150cac774, type: 3}
+  - {fileID: 21300000, guid: 489af81106cbe434cb782c5dd4efb4f8, type: 3}
+  - {fileID: 21300000, guid: 2448ca2193b42b84c937bc8f0be27e58, type: 3}
+  - {fileID: 21300000, guid: a0c2eac10ba2f0f4498bf2ceadb23888, type: 3}
+  - {fileID: 21300000, guid: 723bc2e1ce712f74cacc173f13a71d7f, type: 3}
+  - {fileID: 21300000, guid: 4ecbf8323a649164b88680aa90be2659, type: 3}
+  - {fileID: 21300000, guid: 9a81e192fb2c45046b36435c961193c6, type: 3}
+  - {fileID: 21300000, guid: 7584e5d2c6e37a8488fb455cb2767231, type: 3}
+  - {fileID: 21300000, guid: 8517e7136e4b2c741a464d414a90c426, type: 3}
+  - {fileID: 21300000, guid: b817ae136da62da46a6e7e1033d65331, type: 3}
+  - {fileID: 21300000, guid: 22979433d796be74eaaa1cdda2de9c7e, type: 3}
+  - {fileID: 21300000, guid: 9d504bd3ee9306e4fab7fe46534361d9, type: 3}
+  - {fileID: 21300000, guid: f1b56024cd9fe4e4aa9f64f0ba2cceaa, type: 3}
+  - {fileID: 21300000, guid: 3e1b81c4f70fc1143b9d317871f1304e, type: 3}
+  - {fileID: 21300000, guid: c0975ec5105069c478387eedb51f2f6b, type: 3}
+  - {fileID: 21300000, guid: eaa900e5640cb55459d90740ab4b53cd, type: 3}
+  - {fileID: 21300000, guid: 184e2f365c598424db6ae8638cbee6c6, type: 3}
+  - {fileID: 21300000, guid: 47f1cc460de0fc1448e2d1527240589c, type: 3}
+  - {fileID: 21300000, guid: 9072f176d7786f741a18d1f03191b713, type: 3}
+  - {fileID: 21300000, guid: be0d2f862ea45254b8a5e04cf0cd06f5, type: 3}
+  - {fileID: 21300000, guid: f025f9f6303d0054397f5373c2d1299e, type: 3}
+  - {fileID: 21300000, guid: 721b180765e605f4c8b16efeb91be499, type: 3}
+  - {fileID: 21300000, guid: 7f6a60374a6f76b4aab30aca03fc219e, type: 3}
+  - {fileID: 21300000, guid: 2e213c57d2a971746a8ddcd8501199c1, type: 3}
+  - {fileID: 21300000, guid: bcf947670ba54c1489eb01655d3700db, type: 3}
+  - {fileID: 21300000, guid: 14399dc7746d1fb42b1f52058e4b22c8, type: 3}
+  - {fileID: 21300000, guid: d52b0d08e61fe624bb6059551259c72a, type: 3}
+  - {fileID: 21300000, guid: a91d9418483feb94f9cb597b2c16b815, type: 3}
+  - {fileID: 21300000, guid: 5eb0a81858aefbf4dbc00ab884b13518, type: 3}
+  - {fileID: 21300000, guid: e14635581dcef37499ed814223b4fe2a, type: 3}
+  - {fileID: 21300000, guid: 64f3bf78ca4a46a42a17e46ce1b5104e, type: 3}
+  - {fileID: 21300000, guid: ca3b2cd8ec4d12c478592c8e376825a1, type: 3}
+  - {fileID: 21300000, guid: 14ca8c494f456824bbec465d733fbdd5, type: 3}
+  - {fileID: 21300000, guid: 15418b89e1da87640a1b5b20e2dcbc92, type: 3}
+  - {fileID: 21300000, guid: 25f6a39972780c5479712d289826fb70, type: 3}
+  - {fileID: 21300000, guid: fbb9dfc9d48caf747a93249f33f80e35, type: 3}
+  - {fileID: 21300000, guid: e0a3fd8a70666f9448f44288b224a19c, type: 3}
+  - {fileID: 21300000, guid: 05bf4aaa1a000f9459edd55ceab5f963, type: 3}
+  - {fileID: 21300000, guid: e96cf9dac67e84944bb0575cddda8b49, type: 3}
+  - {fileID: 21300000, guid: 9a11d56b53ebee943b967764303e0384, type: 3}
+  - {fileID: 21300000, guid: e5caeb0ca02fcb3429978094ee4759cf, type: 3}
+  - {fileID: 21300000, guid: 3f3dfe0cbfc7c2a42b58f52aab629a85, type: 3}
+  - {fileID: 21300000, guid: a927506c0890e6d48be65fed34842244, type: 3}
+  - {fileID: 21300000, guid: 200a496ca86b39c44bb997d1ea314889, type: 3}
+  - {fileID: 21300000, guid: b415aa6ce93cf654e96cfe8202825622, type: 3}
+  - {fileID: 21300000, guid: 880ddffc7e828fa40b907fb3b8d2dc69, type: 3}
+  - {fileID: 21300000, guid: c46db66da25ef794ebb27ead44618bce, type: 3}
+  - {fileID: 21300000, guid: fab6838d573ae9c40adcd61fa9bbb93a, type: 3}
+  - {fileID: 21300000, guid: f845d8ed275c27c4da63aa0b344b8752, type: 3}
+  - {fileID: 21300000, guid: cb6bc9ed1f167e74caf1327bab3b8df4, type: 3}
+  - {fileID: 21300000, guid: aa29ce2eb143bc14682ecc9fa3c12df0, type: 3}
+  - {fileID: 21300000, guid: ba03774e7d479b44b88901963ce54093, type: 3}
+  - {fileID: 21300000, guid: c44ce65eefa9a7c47ad4adaa9537afd8, type: 3}
+  - {fileID: 21300000, guid: 9aa96c3f44ade954eb4eb201542cf726, type: 3}
+  - {fileID: 21300000, guid: 515efc3f4ce24cd478a3f7f2c1b23afa, type: 3}
+  - {fileID: 21300000, guid: 9843bb4fcb59c09458a9068c02e0c8fa, type: 3}
+  - {fileID: 21300000, guid: 9ab0c17fa28acd946be4718ee384929a, type: 3}
+  - {fileID: 21300000, guid: e00fa0afa6237e8488ac74d8e092dbf7, type: 3}
+  - {fileID: 21300000, guid: 586fb3effbf6eda46a029b1af9bc6819, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Ceda Portrait
+  - axe transformation portrait
+  - level warp portrait
+  - Mega Satan Portrait
+  - Klempodrome Portrait
+  - shadowman_portrait
+  - flaming coca cola portrait
+  - Barbarian Portrait
+  - Andre Portrait
+  - ethernet climber portrait
+  - slav cannon portrait
+  - locked
+  - burek portrait
+  - floppy disc portrait
+  - alien portrait
+  - golden tea pot portrait
+  - Lizardman Portrait
+  - spikeys portrait
+  - ghost dancer portrait
+  - King Trashbug Portrait
+  - mothman portrait
+  - yeet portrait
+  - Miroslav Portrait
+  - garlic cola portrait
+  - csgo knife portrait
+  - mad sorcerer portrait
+  - mysterious apple portrait
+  - halva portrait
+  - purple_haze_portrait
+  - bounce stickman portrait
+  - gopnik portrait
+  - knife L portrait
+  - bumbo portrait
+  - 1up portrait
+  - Trashbug portrait
+  - bloodbug portrait
+  - spaceship portrait
+  - painter portrait
+  - ghost portrait
+  - lumpy portrait
+  - Mega Satlin & Nuclear Throne Portrait
+  - dinosaur portrait
+  - space chicken portrait
+  - starship seven portrait
+  - trashbee portrait
+  - evil otto portrait
+  - trashfly portrait
+  - Djole Portrait
+  - counter terrorist portrait
+  - death head portrait
+  - sea urchin portrait
+  - golden sausage
+  - sspooky pepper shaker portrait
+  - skeleton portrait
+  - border
+  - burger_portrait
+  - IMJ Portrait
+  - fugo portrait
+  - princess portrait
+  - alex_mercer_portrait
+  - c moon portrait
+  - Murphy Portrait
+  - mixtape portrait
+  - MariObama Portrait
+  m_Tag: LoreBookProfiles
+  m_IsVariant: 0

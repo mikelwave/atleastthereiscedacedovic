@@ -1,0 +1,69 @@
+;1//MainSaveData
+0//CurrentWorld
+0//TotalCompletedLevels
+0//Score
+5//Lives
+0//Coins
+0//Sausages
+0//Floppies
+0//PlayerState
+0//StoredItem
+0//LastLoadedLevel
+0//LastLoadedWorld
+0//WorldProgression
+0//AndreMissionProgress (0 locked, 1 unlocked, 2 completed)
+0//DjoleMissionProgress (0 locked, 1 unlocked, 2 completed)
+0//MiroslavMissionProgress (0 locked, 1 unlocked, 2 completed)
+0//PlayMode
+0//InfniteLives
+0//Difficulty
+
+=
+;2//LevelProgress (StageValue,SausageIndicators,FloppyCollect,BestTime)
+N;
+N;000
+N;000
+N;000
+N;
+N;000
+N;000
+N;000
+N;000
+N;000
+N;
+N;000
+N;000
+N;000
+N;000
+N;000
+N;
+N;000
+N;000
+N;000
+N;000
+N;000
+N;
+N;000
+N;000
+N;000
+N;000
+N;000
+N;
+N;000
+N;000
+N;000
+N;000
+N;000
+N;
+N;
+N;
+N;
+N;
+N;
+N;
+N;
+=//finish loading levels here. if array is larger than the amount of levels here they will not overwrite the data in the default data share component.
+;3//CellData
+11111100000000000000000000000000000000000000000000000000000000
+=/
+END OF SAVE FILE

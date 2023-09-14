@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 440873d0236779641b00d545a7f60df3
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 6
+  forceTextureCase: 3
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: CEDAScore
+  fontNames:
+  - CEDAScore
+  fallbackFontReferences: []
+  customCharacters: 0123456789up+!
+  fontRenderingMode: 2
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

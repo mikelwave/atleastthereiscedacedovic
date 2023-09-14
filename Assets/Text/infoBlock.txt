@@ -1,0 +1,116 @@
+﻿[B,Point of advice] While you're in the air,<new line>press <color red>DOWN<color white> to perform a dive.
+The more speed you've built up, the further you'll go.
+Watch out though; once you're<new line>diving, <color red>you can't stop yourself<new line>until you touch the ground<color white>.
+
+[B,Point of advice] Hold "<color red><run key><color white>" to pick up more<new line>speed. The faster you are,<new line>the higher you'll jump!
+
+[B,Point of advice] <color red>Golden Sausages<color white> are highly<new line>valuable and very delicious.
+Once you see one, try to find<new line>a way to collect it.<new line>Grab as many as you can!
+
+
+[B,Point of advice] The <color red>Pepper<color white> powerup lets you<new line>shoot cheese wheels.<new line>Yes.
+To do so, tap the "<color red><run key><color white>" key.
+Watch out though,<new line>some enemies may be<new line><color red>cheese-resistant<color white>.
+
+[B,Point of advice] When you see a football,<new line>soccer ball<new line>or whatever you call it...
+Try to <color red>kick<color white> it running as fast as you can.
+And, if you're good enough,<new line>try to <color red>jump<color white> as you're<new line><color red>kicking it<color white>.
+<new line>Oh and don't miss, that's lame.
+
+[B,Point of advice] You can hold <color red>music discs<color white> if you<new line>hold the "<color red><run key><color white>" key when near it.
+When you let go of "<color red><run key><color white>",<new line>you'll <color red>kick<color white> the disc.
+Be careful,<new line><color red>don't hold the disc for<new line>too long<color white>!
+
+[B,Point of advice] After picking up an<new line><color red>Axe<color white> powerup, you'll<new line><color red>grow blades on your arms<color white>.
+This will allow you to perform<new line>a <color red>spin attack<color white> by tapping "<color red><run key><color white>".
+You may also <color red>kill enemies<color white> by<new line><color red>dashing into them<color white> in this form.
+
+[B,Point of advice] Pick up the Cheburek powerup<new line>and you'll become Super Čeda!
+In this form, you can dive<new line>diagonally upwards by tapping<new line>"UP" while in the air.
+Your regular dive will also go<new line>a little bit further.
+You can also glide by<new line>holding "<jump key>" while falling.
+
+[B,Point of advice] Look at those white blocks,<new line>you see those white blocks?<new line>Those are not good blocks.
+They are made of <color red>cheese<color white> and are<new line><color red>extremely hot to the touch<color white>.
+Avoid them at all costs.
+
+[B,Point of advice] If you have an item stored,<new line>press "<color red><select key><color white>"<new line>to release it.
+It will then float down from<new line>the box, so be quick to grab it.
+
+[B,Point of advice] This forest is extremely cold, so much so that <color blue>time itself<new line>is frozen<color white>.
+But if you were to get into a<new line><color red>slightly warmer place<color white>,<new line>it might<color red> start ticking again<color white>.
+Also, be careful when stepping<new line>on <color red>ham blocks<color white>.
+It took 3 years to perfect the<new line>texture of the meat, therefore<new line>it is <color red>very slippery<color white>.
+But they're not harmful<new line>by themselves.
+
+[B,Point of advice] An <color red>Eternal powerup<color white>'s effect<new line>will stay on you even if you<new line>take damage.
+You can take <color red>3 hits<color white> in<new line>an eternal form,<new line><color red>the third hit will kill you<color white>.
+But you can <color red>restore health<color white><new line>by picking up<color red> a powerup of<new line>the same type<color white>.
+The eternity of the powerup<new line>will <color red>wear off<color white> after you<new line><color red>complete the level<color white>.
+
+[B,Point of advice] We have run out of levels.<new line>Please enjoy the<new line>Black Room of Fuck.
+
+[B,Point of advice] If you find the<new line>"CSGO Knife" powerup, you'll<new line>be able to shoot knives.
+Once fired, they will pierce<new line>through enemies and walls,<new line>then boomerang back to you.
+
+[B,Point of advice] Be wary when handling the<new line><color red>Orange HD 3,5 Inch Floppy<new line>Diskette<color white>.
+They contain highly dangerous<new line>data, and will <color red>explode<color white> after a<new line>short period after being held.
+Thrown, they will explode on<new line>impact, but not if you <color red>squat<new line>and then release it<color white>.
+They will <color red>continue ticking when put down<color white>, useful if you must<new line>place them in a <color red>precise spot<color white>.
+
+[B,Point of advice] The <color red>blood pool<color white> below you<new line>begins to <color red>rise<color white>, stay too long<new line>and you'll meet your demise.
+Along the surface runs a<new line><color red>fishbone shoal<color white>, a <color red>deadly floor<color white><new line>on which you may <color red>stroll<color white>.
+Drain the pools with a <color red>^ block<color white>,<new line>but once you do, beware the <color red><new line>clock<color white>.
+
+[B,Point of advice] They drain your speed<fast text>... <normal text>When<new line>no speed,            your jump<fast text>...<normal text>
+Unless you stick to a side<fast text>...<normal text><new line>Then unstick many times<fast text>...<normal text>
+
+[B,Point of advice] <new line>                   again?
+
+[B,Point of advice] <new line>              One = jedan.
+
+[B,Point of advice] <new line>               Two = dva.
+
+[B,Point of advice] <new line>              Three = tri.
+
+[B,Point of advice] <new line>             Four = četiri.
+
+[B,Point of advice] <new line>              Five = pet.
+
+[B,Point of advice] <new line>  Which suit will suit the king?
+
+[B,Point of advice] <color white>What a lovely house!<new line>Up, up, down, 9, 9,<new line>down, 6, up, 9, 6.
+
+[B,Point of advice] Prvo pritisnite pet, zatim<new line>jedan, a zatim četiri i ne<new line>zaboravite tri i dva.
+
+[B,Point of advice] The legendary <color red>L knife<color white>.<new line>I forgot why it's called that,<new line>but it's good.
+Its powerful energy allows you to kill enemies that are <color red><new line>resistant to normal attacks<color white>.
+Even ones that are <color red>not alive<color white>.
+
+[B, Shop] Skip level <color red><get last level><color white>?<new line><color red><skips left><color white> skip(s) remaining.<options>
+Yes|No
+
+Shop (Skip level)
+[B, Shop] Level <color red><get last level -1><color white> has been skipped.<new line><color red><skips left><color white> skip(s) remaining.<new line>Your progress has been saved.
+[?, ] <skip line><event>
+
+Shop(out of stock)
+[B, Shop] Out of stock<fast text>!!<normal text><new line>Beat a skipped level to<new line>restock!
+
+Shop(Cant skip)
+[B, Shop] Can't skip level <color red><get last level><color white>!
+
+Shop(All levels beaten)
+[B, Shop] No levels to skip!
+
+Shop(All levels beaten, but some skipped)
+[B, Shop] Replay skipped levels<fast text>!!<normal text>
+
+[B,Point of advice] <new line>               I hate you.
+
+[B,Point of advice] [Captain's Log, Day 2401]<new line>After weeks of navigating<new line>through space rock mazes<fast text>...<normal text>
+and battling a giant<new line>disembodied Pharoah head, it<new line>seems that we are currently<fast text>...<normal text>
+<color red>In the middle of our journey<color white>.<new line>Our current course appears to<new line>be very long and intricate.
+For now, I'll be returning to my<new line>post, the crew is beginning to<new line>feel <color red>light-headed<color white>.
+<new line>              [End of log]
+

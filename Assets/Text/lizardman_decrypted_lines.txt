@@ -1,0 +1,5 @@
+﻿[C,Čeda]: <event><fake type 2>What<fake type 4> who<fake type 5> fuck <fake type 3>in<fake type 5> hell<fast text>!?<normal text>
+[L, Lizardman]: <event>Correct, <fake type 2>Čeda,<fake type 12> the<fake type 4> being<fake type 8> of<fake type 6> me<fake type 6><new line>is<fake type 4> tied<fake type 3> with<fake type 5> Coca<fake type 5> Cola.
+[C,Čeda]: <event><fake type 2>Fuck<fake type 4> the<fake type 4> coke,<fake type 10> fuck<fake type 4> the<fake type 4> pizza,<fake type 10> all<fake type 2> I<fake type 2> need<fake type 2> is<fake type 4> shljivovica.<fake type 4>
+[L, Lizardman]: <event><fake type 2>I<fake type 2> WILL<fake type 8> FUCK<fake type 8> YOU<fake type 6> TO<new line><fake type 8>SLEEP<fake type 4> WITH<fake type 4> SUPERMANCY<new line><fake type 4>OF<fake type 4> <shake><shakecam 0.1 0.2>SWORD!<fake type 2>
+[C,Čeda]: <event>huh<event>

@@ -1,0 +1,195 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1738629765842976
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4488730674140376}
+  - component: {fileID: 114456614635775090}
+  m_Layer: 0
+  m_Name: DataShare
+  m_TagString: DataShare
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4488730674140376
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738629765842976}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.862594, y: -9.096021, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114456614635775090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738629765842976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0debf26571d9354ca6cb87589368b95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saveFileID: 0
+  infiniteLives: 0
+  difficulty: 0
+  mode: 0
+  currentWorld: 0
+  startTotalCompletedLevels: 0
+  score: 0
+  CheckpointScore: 0
+  CheckpointSausages: 0
+  checkpointFloppies: 0
+  savedTimeClock: 0
+  lives: 5
+  coins: 0
+  checkPointCoins: 0
+  checkPointState: 0
+  sausages: 0
+  spentSausages: 0
+  floppies: 0
+  playerState: 0
+  storedItem: 0
+  checkPointTimeCounter: 0
+  lastLoadedLevel: 0
+  lastLoadedWorld: 0
+  levelToLoad: 1
+  parTime: 0
+  skipsLeft: -1
+  startAllClear: 0
+  checkpointValue: 0
+  startInSub: 0
+  specialData: 0
+  checkpointLevelProgress: 
+  levelProgress:
+  - N;
+  - N;000
+  - N;000
+  - N;000
+  - N;
+  - N;000
+  - N;000
+  - N;000
+  - N;000
+  - N;000
+  - N;
+  - N;000
+  - N;000
+  - N;000
+  - N;000
+  - N;000
+  - N;
+  - N;000
+  - N;000
+  - N;000
+  - N;000
+  - N;000
+  - N;
+  - N;000
+  - N;000
+  - N;000
+  - N;000
+  - N;000
+  - N;
+  - N;000
+  - N;000
+  - N;000
+  - N;000
+  - N;000
+  - N;
+  - N;
+  - N;
+  - N;
+  - N;
+  - N;
+  - N;
+  - N;
+  levelNames:
+  - Poor 4 Neighborhood
+  - Welcome to Death!
+  - Toast mines
+  - Not the Air Level!
+  - King Trashbug
+  - Honey Cave
+  - Spin Fun
+  - Space Impact
+  - Icy Tower
+  - Deep Abyss
+  - BARBARIAN
+  - Castlevania 10
+  - Shift
+  - Cable Capers
+  - Aqua Energizer
+  - Starship 11
+  - Golimar
+  - Building Panic
+  - Bubble Bobble Nostalgie
+  - Pharaoh's Curse
+  - Snoopy v1.0
+  - Sven Zwo
+  - Murphy's Revenge
+  - Exodus to Death
+  - Call of Cthulhu
+  - Eyeless
+  - ' ''The '
+  - GAME.bps
+  - Lizardman
+  - stick figures on crack!!
+  - Desktop Wars 2
+  - GTA Myth Hunters
+  - Around the World in 80s
+  - Counter-Strike 1.6
+  - GoAnimosity
+  - Bitchin'
+  - Spartaman
+  - Moppa Wars
+  - suicidemouse.avi
+  - sponge bob saw
+  - The Test Level
+  - Get 2 it
+  worldNames:
+  - BORING
+  - JAVA JUNGLE
+  - FLASHLANDS
+  - SHAREWARE CITY
+  - SPOOKY HILL
+  - FINAL
+  - MEME CORE
+  - HOME
+  worldProgression: 0
+  clearedUnbeatenLevel: 0
+  leavingLevel: 0
+  playCutscene: 1
+  AndreMissionProgress: 0
+  DjoleMissionProgress: 0
+  MiroslavMissionProgress: 0
+  savedCamPos: {x: 0, y: 0, z: 0}
+  hasred: 0
+  hasblue: 0
+  hasyellow: 0
+  subtitlePrefab: {fileID: 3181896691542723927, guid: 7b0aca20c4c049d47a0de5b7cb2bb21e,
+    type: 3}
+  saving: 0
+  loreBook: {fileID: 8790788673594843032, guid: 3d6df76591438f444b9427b365673b6a,
+    type: 3}
+  cellData: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  saveIcon: {fileID: 6889332701798472539, guid: 71817d62cc9001749a5b00cd02174b01,
+    type: 3}
+  savedTrackName: 
+  savedTrackPoint: 0
+  savedTrackBeatDelay: 0
+  debugMode: 0
+  cheatSound: {fileID: 8300000, guid: c21fbad1a14b2934b87aba5798daa67b, type: 3}

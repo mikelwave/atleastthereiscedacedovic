@@ -1,0 +1,4 @@
+[G] npc text
+more npc text
+[C]ceda text
+more ceda text

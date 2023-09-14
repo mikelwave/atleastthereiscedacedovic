@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d5751a2c961df945a34295ccf5e576d, type: 3}
+  m_Name: Coin brush
+  m_EditorClassIdentifier: 
+  savePrefabsBackup: 0
+  loadPrefabsBackup: 0
+  spawnInverted: 0
+  spriteColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_Prefabs:
+  - {fileID: 3708766333058126870, guid: 67bfaf9dc0f40274293200e198d4778e, type: 3}
+  - {fileID: 1786344101001110, guid: 6d76ccbe7ea7b1f4092a6a864bb790b5, type: 3}
+  - {fileID: 1257608802816462, guid: 2ddb95c2779a2e843bb4fc5bc7e987cd, type: 3}
+  - {fileID: 1654244222228008, guid: fd0804aac93b7704da1eabd157427e4c, type: 3}
+  - {fileID: 1820178448514674, guid: f5ee1e8da9084754f862e17154d28a89, type: 3}
+  - {fileID: 1326559163844098, guid: e5bfbd7eeeb986543b1e112486402e53, type: 3}
+  - {fileID: 1182736273775134, guid: d1b9c33e4dec19d4da683b6d56c6da37, type: 3}
+  - {fileID: 1301088986769784, guid: 532b0c03da473114a88a3b6d9445bd25, type: 3}
+  m_Prefabs_backUp:
+  - {fileID: 3708766333058126870, guid: 67bfaf9dc0f40274293200e198d4778e, type: 3}
+  - {fileID: 1786344101001110, guid: 6d76ccbe7ea7b1f4092a6a864bb790b5, type: 3}
+  - {fileID: 1257608802816462, guid: 2ddb95c2779a2e843bb4fc5bc7e987cd, type: 3}
+  - {fileID: 1654244222228008, guid: fd0804aac93b7704da1eabd157427e4c, type: 3}
+  - {fileID: 1820178448514674, guid: f5ee1e8da9084754f862e17154d28a89, type: 3}
+  - {fileID: 1326559163844098, guid: e5bfbd7eeeb986543b1e112486402e53, type: 3}
+  - {fileID: 1182736273775134, guid: d1b9c33e4dec19d4da683b6d56c6da37, type: 3}
+  - {fileID: 1301088986769784, guid: 532b0c03da473114a88a3b6d9445bd25, type: 3}
+  m_PerlinScale: 0.5
+  m_Z: 0
+  prefabID: 1
+  isRandom: 0
+  PositionOffset: {x: 0.5, y: 0, z: 0}

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d5751a2c961df945a34295ccf5e576d, type: 3}
+  m_Name: npc_brush
+  m_EditorClassIdentifier: 
+  savePrefabsBackup: 0
+  loadPrefabsBackup: 0
+  spawnInverted: 0
+  spriteColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_Prefabs:
+  - {fileID: 1324562109946816, guid: 7e6b9f165c2c1a448a45c02f71419f11, type: 3}
+  - {fileID: 1351401852801896, guid: db9c4ae945f72db4abf9f66c5283d62d, type: 3}
+  m_Prefabs_backUp: []
+  m_PerlinScale: 0.5
+  m_Z: 0
+  prefabID: 0
+  isRandom: 0
+  PositionOffset: {x: 0.5, y: 0, z: 0}

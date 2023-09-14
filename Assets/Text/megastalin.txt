@@ -1,0 +1,25 @@
+﻿[M, Mega Stalin]: <event>So,<fake type 12> you<fake type 7> finally<fake type 7> made<fake type 2> it.<fake type 2>
+[C,Čeda]: <event><fast text><shakecam 0.05 1>Yeah, yeah.<normal text><fake type 2> Out of<fake type 2> my way,<new line>I<fake type 2> have<fake type 2> regicide<fake type 5> to<fake type 2> commit.<fake type 2>
+[M, Mega Stalin]: <event>Not<fake type 7> so<fake type 7> fast,<fake type 16> you<fake type 4> must<fake type 5> first<new line><fake type 5>fight<fake type 8> Nuclear<fake type 6> Throne!<fake type 6>
+[!, Nuclear Throne]: <event>I<fake type 2> can<fake type 2> destroy.<fake type 2>
+[C,Čeda]: <event>I will beat the shit<fake type 1> out<fake type 1> of<fake type 1> him.<fake type 2>
+[M, Mega Stalin]: <cant skip><event><can skip>Very well,<fake type 9> have at you.<fake type 2><event>
+
+[M, Mega Stalin]: <cant skip><event><can skip><shake><shakecam 0.05 0.5>Bravo!<fake type 12>  Bravo!<new line><fake type 12>You<fake type 2> have<fake type 3> proven<fake type 4> yourself<fake type 6><new line>worthy<fake type 6> of<fake type 2> fighting<fake type 6> our<fake type 2> Boss!<fake type 4>
+
+[1,Cultist 1] <event>Okay<fake type 4> everyone,<fake type 12><new line>let's<fake type 4> start<fake type 3> the<fake type 2> ritual.<fake type 3>
+[3,Cultist 2] <event><cant skip>The<fake type 3> Skull<fake type 3> Cult<fake type 3> are<fake type 3> back.<fake type 13><skip line>
+The<fake type 3> Skull<fake type 3> Cult<fake type 3> are<fake type 3> back<fake type 3> to<new line><fake type 4>kill.<fake type 12><skip line>
+The<fake type 3> Skull<fake type 3> Cult<fake type 3> are<fake type 3> here<fake type 5> to<new line><fake type 2>claim<fake type 6> their<fake type 3> soul.<fake type 4><can skip>
+[C,Čeda] <shake><shakecam 0.1 0.4><event>Not<fake type 2> so<fake type 2> fucking<fake type 2> fast,<fake type 4><new line>you<fake type 2> fucking<fake type 2> idiots!<fake type 2>
+[?, ] <hide box><cant skip><event><fake type 60><skip line>
+[2,Cultist 3] <event><show box><can skip>Oh<fake type 2> he's<fake type 2> here<fake type 2> already<fast text>...<normal text><fake type 6>
+[C,Čeda] <event><shake cam 0.05 0.5>My<fake type 1> name<fake type 2> is<fake type 2> Čeda<fake type 6> Čedović,<fake type 4> and<new line><fake type 2>I'm<fake type 2> here<fake type 3> to<fake type 2> kill<fake type 4> Motherfuckers!<fake type 5>
+[3,Cultist 2] <event>You're<fake type 3> too<fake type 3> late,<fake type 7><new line>foolish<fake type 3> mortal,<fake type 10> the<fake type 2> ritual<fake type 6><new line>is<fake type 3> complete!<fake type 6>
+[?, ] <hide box><cant skip><event><fake type 60><event><fake type 120><skip line>
+[2,Cultist 3] <event><show box><can skip>Is<fake type 2> he<fake type 2> supposed<fake type 5> to come<fake type 3> here?<fake type 4>
+[?, ] <hide box><cant skip><event><fake type 180><skip line>
+[1,Cultist 1] <event><show box>Oh,<fake type 5> here<fake type 3> he<fake type 3> is!<fake type 8><can skip>
+
+//they all fucking die & mega satan's rises from the ground saying something backwards//
+//Trigger invisible checkpoint and the fight starts//

@@ -1,0 +1,127 @@
+How To Use: Rebindable Input
+
+
+
+Step 1:		Import the package. There should now be a few folders in different locations called "Rebindable Input".
+
+Step 2:		Drag the "Rebindable Manager" prefab into your game's main scene. The prefab carries a script component that allows the entire system to work.
+		Also, the script prevents the added prefab from being destroyed when loading different scenes.
+
+Step 3:		Click on the just-added prefab, and look for the "Rebindable Data" script. This script allows the developer (you) to specify the default keybinds.
+
+Step 4:		Define a few keys using the Inspector panel (such as Jump, Crouch, etc.) and a few axes (such as forward/backward, left/right, etc.) as your defaults.
+		For keybinds, name it, set a key, and done! For axis binds, set a name, set a key that will return a positive result,
+		and a key that returns a negative result, and done! You can even use up to 6 mouse buttons in your bindings!
+
+Step 5A:	To determine if a keybind you defined is being pressed, you can use "RebindableInput.GetKey("NameOfBinding");" (returns true/false)
+		where "NameOfBinding" is the name you specified for that binding earlier. This allows the developer to simply ask for, say,
+		the Jump binding, and not have to worry about what key Jump actually uses.
+
+Step 5B:	To get which direction an axis you defined is in, you can use "RebindableInput.GetAxis("NameOfBinding");" (returns 1, 0, or -1)
+		where "NameOfBinding" is the name you specified for that binding earlier. This allows the developer to simply ask for, say,
+		the Left/Right axis, and not have to worry about what keys Left and Right actually use.
+
+Step 6:		To rebind mid-game, an example script has been provided that can be modified as needed, though it's recommended that it be backed-
+		up for reference and then modified. Before manipulating input bindings inside the game, each script that wishes to do so must
+		reference System.Collections.Generic	(JS: import System.Collections.Generic;	C#: using System.Collections.Generic;)
+
+
+
+Available Scripts and Functions:
+
+RebindableKey script  (C#):
+
+	The RebindableKey script is the storage box for a single key binding. It contains a name string, and a KeyCode that will correspond to that name.
+	This sript is designed to be used by the  rebinding system, and not for anything else, and in fact, is quite useless without said system.
+
+	Variables:
+
+		public string inputName;			The name of the key bind. Allows a developer to ask for an input by name, and not by key. Defaults to ""
+
+		public KeyCode input;				The key for the key bind. This is checked against Unity's Input class. Defaults to KeyCode.A
+
+
+
+RebndableAxis script (C#):
+
+	The RebindableAxis script is the storage box for a single axis binding. It contains a name string, and 2 KeyCodes. If neither key is being pressed,
+	0 will be returned. If only positive is being pressed, 1 will be returned. If only negative is being pressed, -1 will be returned. This is most
+	useful for directions, as an example Forward/Back could be: "transform.forward * RebindableInput.GetAxis("NameOfAxis")" where positive is W and negative is S.
+
+	This sript is designed to be used by the  rebinding system, and not for anything else, and in fact, is quite useless without said system.
+
+	Variables:
+
+		public string axisName;			The name of the axis bind. Allows a developer to ask for an axis by name, and not by key. Defaults to ""
+
+		public KeyCode axisPos;			The key that results in 1 when pressed. This is checked against Unity's Input class. Defaults to KeyCode.W
+
+		public KeyCode axisNeg;			The key that results in -1 when pressed. This is checked against Unity's Input class. Defaults to KeyCode.S
+
+
+
+RebindableData script (C#):
+
+	The RebindableData script manages all keybinds defined outside the game, and all rebinds performed inside the game.
+	In-game rebinds are saved using Unity's PlayerPrefs class. For more info: http://docs.unity3d.com/Documentation/ScriptReference/PlayerPrefs.html
+
+	Functions:
+
+		RebindableData GetRebindableManager ();		Gets an instance of the RebindableData class, so that other, non-static functions
+								can be accessed.
+
+		List<RebindableKey> GetCurrentKeys ();		Gets a list of the key binds that are currently in use by the system.
+
+		List<RebindableAxis> GetCurrentAxes ();		Gets a list of the axis binds that are currently in use by the system.
+
+		void ActivateDefaultKeys ();			Sets the active key binds in use by the system back to the default set in the editor.
+
+		void ActivateDefaultAxes ();			Sets the active axis binds in use by the system back to the default set in the editor.
+
+		void ActivateSavedKeys ();			Sets the active key binds in use by the system to previously saved, or default if no save is found.
+
+		void ActivateSavedAxes ();			Sets the active axis binds in use by the system to previously saved, or default if no save is found.
+
+		void SaveKeys ();				Saves the currently active list of keys.
+
+		void SaveAxes ();				Saves the currently active list of axes.
+
+
+
+RebindableInput script (JS/C#):
+
+	The RebindableInput script provides access to functions that allow other scripts to check for keypresses by name, rather than by key.
+	This script is written in both Javascript and C# for compatibility with scripts of both languages, since most scripts written in one language
+	cannot access a script written in another. Thus, the developer doesn't have to rewrite a script in a new language to use Rebindable Input.
+	This script is attached to the Rebindable Manager in both langauages in the event a developer has multiple input scripts in either language.
+
+	Functions:
+
+		bool GetKey (string inputName);			Returns true if the key corresponding to the given name is currently being pressed.
+		function GetKey (inputName : String);		Throws a RebindableNotFoundException if a keybind with the given name is not found.
+
+		bool GetKeyDown (string inputName);		Returns true for the very first frame the key corresponding to the given name is pressed,
+		function GetKeyDown (inputName : String);	and will not return true until the key is released and pressed again.
+								Throws a RebindableNotFoundException if a keybind with the given name is not found.
+
+		bool GetKeyUp (string inputName);		Returns true for the very first frame the key corresponding to the given name is released,
+		function GetKeyUp (inputName : String);		and will not return true until the key is pressed and released again.
+								Throws a RebindableNotFoundException if a keybind with the given name is not found.
+
+		int GetAxis (string axisName);			Returns 0 if no keys in the axis are pressed, 1 if positive is pressed, -1 if negative
+		function GetAxis (axisName : String);		is pressed, and 0 again if both positive and negative is pressed.
+								Throws a RebindableNotFoundException if a keybind with the given name is not found.
+
+		KeyCode GetKeyFromBinding (string inputName);		Returns the KeyCode for the given keybind name.
+		function GetKeyFromBinding (inputName : String);	Throws a RebindableNotFoundException if a keybind with the given name is not found.
+
+		KeyCode GetPositiveFromAxis (string axisName);		Returns the KeyCode representing Positive for the give axis name.
+		function GetPositiveFromAxis (axisName : String);	Throws a RebindableNotFoundException if a keybind with the given name is not found.
+
+		KeyCode GetNegativeFromAxis (string axisName);		Returns the KeyCode representing Negative for the give axis name.
+		function GetNegativeFromAxis (axisName : String);	Throws a RebindableNotFoundException if a keybind with the given name is not found.
+
+
+
+FINAL NOTE: Questions, comments, and bug reports can be directed to UberClocked Entertainment (uberclocked_ent@yahoo.com).
+	    For bugs, please copy/paste the error text, and specify what you were trying to do.
