@@ -37000,7 +37000,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isBlock: 0
   playInfoblockSound: 1
-  usedText: {fileID: 4900000, guid: 3a4848c56b9dd924cb8418863d905f21, type: 3}
+  usedText: {fileID: 4900000, guid: 7c17da3b47203394c987ed8a53267b50, type: 3}
   npcVoice: {fileID: 0}
   data: {fileID: 0}
   npcSprites:

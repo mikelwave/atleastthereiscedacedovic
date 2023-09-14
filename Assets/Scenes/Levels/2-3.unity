@@ -51602,6 +51602,11 @@ PrefabInstance:
       propertyPath: startLine
       value: 28
       objectReference: {fileID: 0}
+    - target: {fileID: 114775567118809236, guid: db9c4ae945f72db4abf9f66c5283d62d,
+        type: 3}
+      propertyPath: usedText
+      value: 
+      objectReference: {fileID: 4900000, guid: d3e869a0443b17c4b98c625ed995fd04, type: 3}
     - target: {fileID: 212837418026255912, guid: db9c4ae945f72db4abf9f66c5283d62d,
         type: 3}
       propertyPath: m_Color.r
