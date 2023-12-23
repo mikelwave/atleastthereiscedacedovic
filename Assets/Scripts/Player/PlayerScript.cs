@@ -21,12 +21,6 @@ public class PlayerScript : MonoBehaviour
 	public int dmgMode;
 	public bool controllable;
 	public float horizontalSpeed = 1f;
-	[SerializeField] float walkSpeedGain = 0.07f; //Old: 0.07f
-	[SerializeField] float runSpeedGain = 0.025f; //Old: 0.025f
-	[SerializeField] float airSameDirAcceleration = 0.2f;  //Old: 0.04f; 
-	[SerializeField] float slideSpeed = 0.06f; //Old: 0.06f
-	[SerializeField] float passiveGain = 0.1f; //Old: 0.1f
-
 	[HideInInspector]
 	public AxisSimulator axis;
 	public playerSprite pSprites;
@@ -153,6 +147,7 @@ public class PlayerScript : MonoBehaviour
 	public bool reTrampoline;
 	private float lastXPos;
 	private float posDifference;
+	private float slideSpeed = 0.06f;
 	private Coroutine poisonCor;
 	private GameObject HUD;
 	private bool sfxPaused;
@@ -282,7 +277,7 @@ public class PlayerScript : MonoBehaviour
 		}
 		if (!bloodMode)
 		{
-			axis.axisAdder = passiveGain;
+			axis.axisAdder = 0.1f;
 		}
 		else
 		{
@@ -333,11 +328,11 @@ public class PlayerScript : MonoBehaviour
 		}
 		if (grounded)
 		{
-			axis.axisAdder = passiveGain;
+			axis.axisAdder = 0.07f;
 		}
 		else
 		{
-			axis.axisAdder = airSameDirAcceleration;
+			axis.axisAdder = 0.1f;
 		}
 		canRun = true;
 		if (controllable)
@@ -2192,14 +2187,23 @@ public class PlayerScript : MonoBehaviour
 		slide = true;
 		if (grounded)
 		{
-			axis.axisAdder = slideSpeed;
+			if (axis.Run)
+			{
+				axis.axisAdder = slideSpeed;
+			}
+			else
+			{
+				axis.axisAdder = slideSpeed;
+			}
 		}
-		//Slide while holding dir in air
 		else if (axis.horAxis != 0f || (axis.artificialX != 0f && axis.acceptFakeInputs))
 		{
 			axis.axisAdder = 0.04f + slideSpeed;
 		}
-		//Slide holding no buttons in air
+		else if (!pressedOppositeDirInAir)
+		{
+			axis.axisAdder = Mathf.Clamp(-0.02f + slideSpeed, 0.01f, 0.1f);
+		}
 		else
 		{
 			axis.axisAdder = 0.06f + slideSpeed;
@@ -2227,18 +2231,24 @@ public class PlayerScript : MonoBehaviour
 					axis.setRange(1f);
 				}
 			}
-			float bloodDivider = bloodMode ? 2 : 1;
-			if (grounded) //Set adder for when standing still
+			if (grounded)
 			{
-				axis.axisAdder = walkSpeedGain;
+				if (axis.Run)
+				{
+					axis.axisAdder = 0.1f;
+				}
+				else
+				{
+					axis.axisAdder = 0.07f;
+				}
 			}
 			else if (axis.horAxis != 0f || (axis.artificialX != 0f && axis.acceptFakeInputs))
 			{
-				axis.axisAdder = passiveGain;
+				axis.axisAdder = 0.1f;
 			}
 			else if (!pressedOppositeDirInAir)
 			{
-				axis.axisAdder = airSameDirAcceleration / axis.horAxis == 0 ? 2 : 1;
+				axis.axisAdder = 0.04f;
 			}
 			else
 			{
@@ -2295,7 +2305,6 @@ public class PlayerScript : MonoBehaviour
 
 	private void run()
 	{
-		float bloodDivider = (bloodMode ? 2 : 1);
 		if (axis.Run && !running && Mathf.Abs(axis.axisPosX) >= 1.2f && canRun && !anim.GetBool("dive"))
 		{
 			running = true;
@@ -2309,7 +2318,7 @@ public class PlayerScript : MonoBehaviour
 			}
 			if (!slide && (grounded || (!grounded && axis.axisPosX * axis.horAxis > 0f) || (axis.acceptXInputs && !grounded && axis.artificialX * axis.horAxis > 0f)))
 			{
-				axis.axisAdder = runSpeedGain / bloodDivider;
+				axis.axisAdder = 0.025f;
 			}
 		}
 		if ((SuperInput.GetKey("Run") || (!(Mathf.Abs(axis.axisPosX) >= 1.2f) && !running)) && (axis.horAxis != 0f || !running || anim.GetBool("dive")))
@@ -2330,21 +2339,19 @@ public class PlayerScript : MonoBehaviour
 		}
 		if (grounded)
 		{
-			if(axis.axisPosX * axis.horAxis > 0f)
-			axis.axisAdder = walkSpeedGain / bloodDivider;
-			else axis.axisAdder = walkSpeedGain * bloodDivider;
+			axis.axisAdder = 0.07f;
 		}
 		else if (axis.horAxis != 0f && axis.artificialX != 0f && axis.acceptFakeInputs)
 		{
-			axis.axisAdder = passiveGain;
+			axis.axisAdder = 0.1f;
 		}
 		else if (!pressedOppositeDirInAir)
 		{
-			axis.axisAdder = airSameDirAcceleration / (axis.horAxis == 0 ? 2 : 1);
+			axis.axisAdder = 0.04f;
 		}
 		else
 		{
-			axis.axisAdder = passiveGain;
+			axis.axisAdder = 0.1f;
 		}
 	}
 
@@ -2589,7 +2596,7 @@ public class PlayerScript : MonoBehaviour
 			}
 			if (canInterruptDive && grounded)
 			{
-				axis.axisAdder = passiveGain;
+				axis.axisAdder = 0.1f;
 			}
 		}
 	}
@@ -3310,7 +3317,7 @@ public class PlayerScript : MonoBehaviour
 				midSpin = false;
 				stompFrames = 5;
 			}
-			axis.axisAdder = passiveGain;
+			axis.axisAdder = 0.1f;
 			midDive = false;
 			grav.maxVelocities = new Vector2(savedMax, grav.maxVelocities.y);
 			anim.SetBool("dive", value: false);
@@ -3615,7 +3622,7 @@ public class PlayerScript : MonoBehaviour
 			{
 				if (!running)
 				{
-					axis.axisAdder = walkSpeedGain;
+					axis.axisAdder = 0.07f;
 				}
 				else
 				{
@@ -3624,7 +3631,7 @@ public class PlayerScript : MonoBehaviour
 			}
 			else if (!grounded && !running)
 			{
-				axis.axisAdder = passiveGain;
+				axis.axisAdder = 0.1f;
 			}
 			else if (!grounded && running)
 			{
@@ -3642,11 +3649,11 @@ public class PlayerScript : MonoBehaviour
 				if (!running || Mathf.Abs(axis.axisPosX) <= 1.2f)
 				{
 					running = false;
-					axis.axisAdder = walkSpeedGain;
+					axis.axisAdder = 0.07f;
 				}
 				else
 				{
-					axis.axisAdder = runSpeedGain;
+					axis.axisAdder = 0.025f;
 				}
 			}
 			if (running)
@@ -3676,11 +3683,11 @@ public class PlayerScript : MonoBehaviour
 			if (!running || Mathf.Abs(axis.axisPosX) <= 1.2f)
 			{
 				running = false;
-				axis.axisAdder = walkSpeedGain;
+				axis.axisAdder = 0.07f;
 			}
 			else
 			{
-				axis.axisAdder = runSpeedGain;
+				axis.axisAdder = 0.025f;
 			}
 		}
 		crouching = false;
@@ -3727,7 +3734,7 @@ public class PlayerScript : MonoBehaviour
 				pathPoints[1] = new Vector2(0f, colliderHeight.x);
 				pCol.SetPath(0, pathPoints);
 				anim.SetBool("crouch", crouching);
-				axis.axisAdder = walkSpeedGain;
+				axis.axisAdder = 0.07f;
 			}
 		}
 		else if (raycastHit2D.collider != null && crouchBlock)
@@ -4074,11 +4081,11 @@ public class PlayerScript : MonoBehaviour
 			axisSimulator.axisPosX = 1f * localScale9.x;
 			if (grounded)
 			{
-				axis.axisAdder = walkSpeedGain;
+				axis.axisAdder = 0.07f;
 			}
 			else
 			{
-				axis.axisAdder = passiveGain;
+				axis.axisAdder = 0.1f;
 			}
 		}
 		if (raycastHit2D3.collider != null && !frameCollision)
@@ -4087,11 +4094,11 @@ public class PlayerScript : MonoBehaviour
 			axis.axisPosX = 0f;
 			if (grounded)
 			{
-				axis.axisAdder = walkSpeedGain;
+				axis.axisAdder = 0.07f;
 			}
 			else
 			{
-				axis.axisAdder = passiveGain;
+				axis.axisAdder = 0.1f;
 			}
 			Transform t=raycastHit2D3.collider.transform;
 			if (!knockedBack &&!t.name.Contains("NoCol") &&t.tag != "VeloReverse" && !dead)
@@ -4199,9 +4206,9 @@ public class PlayerScript : MonoBehaviour
 		reTrampoline = false;
 		grounded = true;
 		diveCooldown = 0;
-		if (!running && !crouching && axis.axisAdder != walkSpeedGain)
+		if (!running && !crouching && axis.axisAdder != 0.07f)
 		{
-			axis.axisAdder = walkSpeedGain;
+			axis.axisAdder = 0.07f;
 		}
 		capeDive = false;
 		data.stompStreak = 0;
