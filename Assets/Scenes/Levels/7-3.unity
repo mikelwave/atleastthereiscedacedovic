@@ -34870,11 +34870,6 @@ PrefabInstance:
       propertyPath: startLine
       value: 498
       objectReference: {fileID: 0}
-    - target: {fileID: 114347565338679934, guid: 7e6b9f165c2c1a448a45c02f71419f11,
-        type: 3}
-      propertyPath: usedText
-      value: 
-      objectReference: {fileID: 4900000, guid: 0b81c2bc81cd98240af4c64d6275da80, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e6b9f165c2c1a448a45c02f71419f11, type: 3}
 --- !u!4 &1659771161 stripped

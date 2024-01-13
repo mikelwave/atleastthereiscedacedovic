@@ -194,7 +194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isBlock: 0
   playInfoblockSound: 1
-  usedText: {fileID: 4900000, guid: e3f58654b90ed0941b5ec8c9c45c860e, type: 3}
+  usedText: {fileID: 4900000, guid: 0b81c2bc81cd98240af4c64d6275da80, type: 3}
   npcVoice: {fileID: 0}
   data: {fileID: 0}
   npcSprites:
@@ -223,6 +223,16 @@ MonoBehaviour:
   - {fileID: 21300002, guid: e34cbfdcb2661b042a1df0e10c8b714d, type: 3}
   linkolnClip: {fileID: 8300000, guid: cf312ca6cf717be42baf29bbfd1df7e2, type: 3}
   linkolnLines: c1020000c5020000ca020000cf020000
+  activateEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: NPCScript+Event, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  disableEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: NPCScript+Event, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!210 &210534647641686482
 SortingGroup:
   m_ObjectHideFlags: 0

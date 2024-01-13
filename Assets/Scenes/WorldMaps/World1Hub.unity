@@ -14695,11 +14695,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114456614635775090, guid: 45559f43d4c20e04dac52b466d745429,
         type: 3}
-      propertyPath: levelProgress.Array.data[2]
-      value: F;111;120
-      objectReference: {fileID: 0}
-    - target: {fileID: 114456614635775090, guid: 45559f43d4c20e04dac52b466d745429,
-        type: 3}
       propertyPath: levelProgress.Array.data[1]
       value: F;111;C;58
       objectReference: {fileID: 0}

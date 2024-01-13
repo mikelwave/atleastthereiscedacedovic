@@ -27,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1351401852801896}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 61.5, y: 8.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -75,7 +75,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isBlock: 1
   playInfoblockSound: 1
-  usedText: {fileID: 4900000, guid: 0471b6d2c9e5a1b4ab9a9989c3cd554f, type: 3}
+  usedText: {fileID: 4900000, guid: d3e869a0443b17c4b98c625ed995fd04, type: 3}
   npcVoice: {fileID: 8300000, guid: 8d55db937591015419304596c7288601, type: 3}
   data: {fileID: 0}
   npcSprites:
@@ -92,7 +92,7 @@ MonoBehaviour:
   spriteInt: 0
   TBScript: {fileID: 0}
   nline: {fileID: 0}
-  turnsToPlayer: 1
+  turnsToPlayer: 0
   inHub: 0
   active: 0
   startTalkWithoutInput: 0
