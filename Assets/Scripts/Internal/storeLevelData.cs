@@ -92,9 +92,23 @@ public class storeLevelData : MonoBehaviour {
 	if(!Application.isPlaying)
 	{
 		if(mainSky.sprite!=mainSkySprite)
-		mainSky.sprite = mainSkySprite;
+		{
+			mainSky.sprite = mainSkySprite;
+			Vector2 size = mainSky.size;
+			if(size.x < 1)
+				size.x = 24;
+
+			mainSky.size = size;
+		}
 		if(subSky.sprite!=subSkySprite)
-		subSky.sprite = subSkySprite;
+		{
+			Vector2 size = mainSky.size;
+			subSky.sprite = subSkySprite;
+			if(size.x < 1)
+				size.x = 24;
+
+			subSky.size = size;
+		}
 
 		play.GetComponent<PlayerMusicBounce>().BPM = BPM;
 		data.inHub = false;

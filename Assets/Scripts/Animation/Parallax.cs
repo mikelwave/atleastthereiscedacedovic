@@ -5,6 +5,7 @@ using System.Collections.Generic;
 [ExecuteInEditMode]
 public class Parallax : MonoBehaviour {
 	
+	public bool AutoSyncWithCamera = true;
 	dataShare dataS;
 	public List<Transform> backgrounds;    
 	private float [] parallaxScales;   
@@ -28,7 +29,7 @@ public class Parallax : MonoBehaviour {
 	{
 		if(Application.isPlaying)
 		{
-		cam = Camera.main.transform; 
+			cam = Camera.main.transform; 
 		}
 
 		if(!Application.isPlaying&&startCamPos==Vector3.zero)
@@ -59,6 +60,10 @@ public class Parallax : MonoBehaviour {
 		}
 		if(Application.isPlaying)
 		{
+			if(AutoSyncWithCamera)
+			{
+				startCamPos = GameObject.Find("Main Camera").transform.position;
+			}
 			if(backgrounds.Count==0)
 			{
 				for (int i = 0; i<transform.childCount;i++)
@@ -81,13 +86,13 @@ public class Parallax : MonoBehaviour {
 	{
 		if(Application.isPlaying)
 		{
-		work = true;
+			work = true;
 		}
 	}
 	void OnDisable()
 	{
 		if(Application.isPlaying)
-		work = false;
+			work = false;
 	}
 	void LateUpdate () 
 	{

@@ -54,6 +54,7 @@ MonoBehaviour:
   CheckpointSausages: 0
   checkpointFloppies: 0
   savedTimeClock: 0
+  checkpointCheat: 0
   lives: 5
   coins: 0
   checkPointCoins: 0

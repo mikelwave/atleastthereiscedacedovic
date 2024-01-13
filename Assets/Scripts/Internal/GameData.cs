@@ -635,6 +635,7 @@ public class GameData : MonoBehaviour {
 				{
 					//Debug.Log(SausagesHold.transform.childCount+" sausages");
 					GameObject UISausage = UISausages.GetChild(0).gameObject;
+
 					for(int s = 0; s<SausagesHold.transform.childCount;s++)
 					{
 						if(s!=0)
@@ -649,6 +650,11 @@ public class GameData : MonoBehaviour {
 							UISausages.GetChild(s).GetComponent<Image>().sprite = sausageMeterSprites[0];
 						else
 						{
+							if(s+2>=currentLevelProgress.Length)
+							{
+								currentLevelProgress = currentLevelProgress.Insert(currentLevelProgress.Length,"0");
+								Debug.LogWarning("Warning: The default level values for sausages in Level "+DataS.lastLoadedLevel+" does not match with sausages placed in this level.\nCopy the CurrentLevelProgress string from the "+gameObject.name+" object, stop the scene and paste it inside the "+GameObject.FindGameObjectWithTag ("DataShare").name+" DataShare script in the \"Level Progress\" section at index "+DataS.lastLoadedLevel+" or change the \"LastLoadedLevel\" value to the id this level is supposed to have \"LevelProgress\" array");
+							}
 							//read the level progress of the sausages for the last loaded level which in a level is the same level.
 							switch(currentLevelProgress[s+2])
 							{
