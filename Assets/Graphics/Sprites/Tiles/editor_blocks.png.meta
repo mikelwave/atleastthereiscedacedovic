@@ -54,6 +54,7 @@ TextureImporter:
     21300098: editor_blocks_49
     21300100: editor_blocks_50
     21300102: editor_blocks_51
+    21300104: editor_blocks_52
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -1540,13 +1541,33 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: b2e4d11158a4edc44a6cb460b0fee45b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: editor_blocks_52
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ce56f4fd4027ea49a4d97002bdef08a
       vertices: []
       indices: 
       edges: []

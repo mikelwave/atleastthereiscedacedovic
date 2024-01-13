@@ -34,6 +34,6 @@ MonoBehaviour:
   m_InstancedGameObject: {fileID: 0}
   m_Flags: 0
   m_ColliderType: 1
-  m_SpriteEdit: {fileID: 21300004, guid: 915078cb0287fe14a996e66752d51e63, type: 3}
+  m_SpriteEdit: {fileID: 21300104, guid: 915078cb0287fe14a996e66752d51e63, type: 3}
   m_SpriteGame: {fileID: 21300000, guid: b94304cf9990b334a95d2722e8807151, type: 3}
   m_SpriteCustomGame: {fileID: 0}
