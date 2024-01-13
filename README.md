@@ -15,6 +15,12 @@ Add the downloaded project to your project list and then let the editor create t
 
 * 1.0
     * Initial Release
+* 1.1
+    * Added Custom folder to the asset files showing off some example custom levels
+	* Improved NPC dialogue system for easier multi-character dialogues
+	* Fixed missing text files for NPCs in the base levels
+	* Restored player controls to 1.1.1 game releases
+	* Various code tweaks and optimizations
 
 ## License
 
