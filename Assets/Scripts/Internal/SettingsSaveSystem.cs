@@ -38,7 +38,7 @@ public static class SettingsSaveSystem
 			}
 			catch(System.Runtime.Serialization.SerializationException)
 			{
-				Debug.LogError("Failed to load settings. Loading defaults.");
+				Debug.LogWarning("Failed to load settings. Loading defaults.");
 			}
 			stream.Close();
 			//Debug.Log("Settings loaded from "+path);
@@ -46,7 +46,7 @@ public static class SettingsSaveSystem
 		}
 		else
 		{
-			Debug.LogError("Settings not saved in "+path);
+			Debug.LogWarning("Settings not saved in "+path);
 			return null;
 		}
 	}
