@@ -35,6 +35,8 @@ public class shadowManAI : MonoBehaviour
 	public GameObject LKnife;
 	List <GameObject> knives;
 	public float jump = 0;
+
+	bool knifeType = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -55,7 +57,16 @@ public class shadowManAI : MonoBehaviour
 			moveDir = (int)transform.localScale.x;
 			//Debug.Log("Start");
 			knives = new List<GameObject>();
-			for(int i = 0;i<2;i++)
+			PreloadProjectiles(LKnife.GetComponent<knifeScript>()!=null);
+			
+			GetComponent<Crusher>().assignValues(whatIsGround,GetComponent<EnemyCorpseSpawner>(),data);
+		}
+    }
+	void PreloadProjectiles(bool knifeScriptPresent)
+	{
+		knifeType = knifeScriptPresent;
+		if(knifeScriptPresent)
+		for(int i = 0;i<2;i++)
 			{
 				GameObject obj = Instantiate(LKnife,transform.position,Quaternion.identity);
 				knifeScript ksc = obj.GetComponent<knifeScript>();
@@ -64,9 +75,17 @@ public class shadowManAI : MonoBehaviour
 				obj.SetActive(false);
 				knives.Add(obj);
 			}
-			GetComponent<Crusher>().assignValues(whatIsGround,GetComponent<EnemyCorpseSpawner>(),data);
+		else
+		for(int i = 0; i<2;i++)
+		{
+			GameObject obj = Instantiate(LKnife,transform.position,Quaternion.identity);
+			obj.SetActive(false);
+			obj.transform.SetParent(transform);
+			obj.GetComponent<Jumper>().data = data;
+			obj.GetComponent<Jumper>().setParent = transform;
+			knives.Add(obj);
 		}
-    }
+	}
     // Update is called once per frame
     void Update()
     {
@@ -129,6 +148,7 @@ public class shadowManAI : MonoBehaviour
 	}
     public void Fire()
     {	
+		if(knifeType)
 		for(int i = 0; i<knives.Count; i++)
 		{
 			if(!knives[i].activeInHierarchy)
@@ -139,6 +159,30 @@ public class shadowManAI : MonoBehaviour
 				break;
 			}
 		}
+		else
+		for(int i = 0; i< knives.Count; i++)
+			if(!knives[i].activeInHierarchy)
+			{
+				Gravity grav = knives[i].GetComponent<Gravity>();
+				data.playSound(fireSoundID,transform.position);
+				if(Mathf.Round(transform.eulerAngles.z)==0)
+				{
+					grav.pushForces = new Vector2(grav.pushForces.x,-Mathf.Abs(grav.pushForces.y));
+					knives[i].transform.position = transform.GetChild(0).GetChild(0).position;
+				}
+				else
+				{
+					knives[i].transform.eulerAngles = new Vector3(0,0,180);
+					grav.pushForces = new Vector2(grav.pushForces.x,Mathf.Abs(grav.pushForces.y));
+					knives[i].transform.position = transform.GetChild(0).GetChild(0).position;
+				}
+				knives[i].transform.parent = null;
+				Vector3 s = transform.localScale;
+				s.x = -s.x;
+				knives[i].transform.localScale = s;
+				knives[i].SetActive(true);
+				break;
+			}
     }
 	IEnumerator jumpFire()
 	{
@@ -148,6 +192,8 @@ public class shadowManAI : MonoBehaviour
 	}
 	public void deathEvent()
 	{
+		if(!knifeType) return;
+
 		for(int i = knives.Count-1;i>=0;i--)
 		{
 			if(knives[i].activeInHierarchy)
