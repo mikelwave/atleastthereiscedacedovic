@@ -145,7 +145,7 @@ public class hitBlockStore : MonoBehaviour {
 	}
 	public void UpdateGameTiles()
 	{
-		//print("Updating tiles...");
+		///print("Updating tiles...");
 		UpdateEditTiles();
 		findRedSwitchBlocks();
 		findRedLocks();
@@ -158,14 +158,14 @@ public class hitBlockStore : MonoBehaviour {
 
 			BoundsInt bounds = map.cellBounds;
 			int Zpos = bounds.z;
-			//Debug.Log(map.cellBounds);
+			///Debug.Log(map.cellBounds);
 			for(int y = map.cellBounds.position.y; y<bounds.size.y+map.cellBounds.position.y;y++)
 			{
 				for(int x = map.cellBounds.position.x; x<bounds.size.x+map.cellBounds.position.x;x++)
 				{
 					if(map.GetTile(new Vector3Int(x,y,Zpos))!=null&&map.GetTile(new Vector3Int(x,y,Zpos))==checkTile)
 					{
-						Debug.Log(new Vector3Int(x,y,Zpos)+", "+checkTile.name);
+						///Debug.Log(new Vector3Int(x,y,Zpos)+", "+checkTile.name);
 					}
 				}
 			}
@@ -205,7 +205,7 @@ public class hitBlockStore : MonoBehaviour {
 		redSwitchBlocks = new List<Vector3Int>();
 		BoundsInt bounds = map.cellBounds;
 		int Zpos = bounds.z;
-		//Debug.Log(map.cellBounds);
+		///Debug.Log(map.cellBounds);
 		for(int y = map.cellBounds.position.y; y<bounds.size.y+map.cellBounds.position.y;y++)
 		{
 			for(int x = map.cellBounds.position.x; x<bounds.size.x+map.cellBounds.position.x;x++)
@@ -235,7 +235,7 @@ public class hitBlockStore : MonoBehaviour {
 		if(maxBrickHorCheck!=0) maxBrickXCheck = maxBrickHorCheck;
 		else maxBrickXCheck = bounds.size.x+map.cellBounds.position.x;
 		int Zpos = bounds.z,ZposBG = bgbounds.z;
-		//Debug.Log(map.cellBounds);
+		///Debug.Log(map.cellBounds);
 		for(int x = map.cellBounds.position.x; x<maxBrickXCheck;x++)
 		{
 			for(int y = map.cellBounds.position.y; y<bounds.size.y+map.cellBounds.position.y;y++)
@@ -245,7 +245,7 @@ public class hitBlockStore : MonoBehaviour {
 				{
 					if(map.GetTile(new Vector3Int(x,y,Zpos)).name=="Brick")
 					{
-						//Debug.Log(new Vector3Int(x,y,Zpos)+", "+map.GetTile(new Vector3Int(x,y,Zpos)));
+						///Debug.Log(new Vector3Int(x,y,Zpos)+", "+map.GetTile(new Vector3Int(x,y,Zpos)));
 						bricks.Add(new Vector3Int(x,y,Zpos));
 					}
 				}
@@ -262,7 +262,7 @@ public class hitBlockStore : MonoBehaviour {
 					{
 						if(backgroundmap.GetTile(new Vector3Int(x,y,Zpos)).name=="Brick")
 						{
-							//Debug.Log(new Vector3Int(x,y,Zpos)+", "+map.GetTile(new Vector3Int(x,y,Zpos)));
+							///Debug.Log(new Vector3Int(x,y,Zpos)+", "+map.GetTile(new Vector3Int(x,y,Zpos)));
 							bgBricks.Add(new Vector3Int(x,y,Zpos));
 						}
 					}
@@ -384,7 +384,7 @@ public class hitBlockStore : MonoBehaviour {
 		redLocks = new List<Vector3Int>();
 		BoundsInt bounds = map.cellBounds;
 		int Zpos = bounds.z;
-		//Debug.Log(map.cellBounds);
+		///Debug.Log(map.cellBounds);
 		for(int y = map.cellBounds.position.y; y<bounds.size.y+map.cellBounds.position.y;y++)
 		{
 			for(int x = map.cellBounds.position.x; x<bounds.size.x+map.cellBounds.position.x;x++)
@@ -394,7 +394,7 @@ public class hitBlockStore : MonoBehaviour {
 				{
 					if(map.GetTile(new Vector3Int(x,y,Zpos)).name=="lock_red")
 					{
-						//Debug.Log(new Vector3Int(x,y,Zpos)+", "+map.GetTile(new Vector3Int(x,y,Zpos)));
+						///Debug.Log(new Vector3Int(x,y,Zpos)+", "+map.GetTile(new Vector3Int(x,y,Zpos)));
 						redLocks.Add(new Vector3Int(x,y,Zpos));
 					}
 				}
@@ -406,7 +406,7 @@ public class hitBlockStore : MonoBehaviour {
 		blueLocks = new List<Vector3Int>();
 		BoundsInt bounds = map.cellBounds;
 		int Zpos = bounds.z;
-		//Debug.Log(map.cellBounds);
+		///Debug.Log(map.cellBounds);
 		for(int y = map.cellBounds.position.y; y<bounds.size.y+map.cellBounds.position.y;y++)
 		{
 			for(int x = map.cellBounds.position.x; x<bounds.size.x+map.cellBounds.position.x;x++)
@@ -416,7 +416,7 @@ public class hitBlockStore : MonoBehaviour {
 				{
 					if(map.GetTile(new Vector3Int(x,y,Zpos)).name=="lock_blue")
 					{
-						//Debug.Log(new Vector3Int(x,y,Zpos)+", "+map.GetTile(new Vector3Int(x,y,Zpos)));
+						///Debug.Log(new Vector3Int(x,y,Zpos)+", "+map.GetTile(new Vector3Int(x,y,Zpos)));
 						blueLocks.Add(new Vector3Int(x,y,Zpos));
 					}
 				}
@@ -428,7 +428,7 @@ public class hitBlockStore : MonoBehaviour {
 		yellowLocks = new List<Vector3Int>();
 		BoundsInt bounds = map.cellBounds;
 		int Zpos = bounds.z;
-		//Debug.Log(map.cellBounds);
+		///Debug.Log(map.cellBounds);
 		for(int y = map.cellBounds.position.y; y<bounds.size.y+map.cellBounds.position.y;y++)
 		{
 			for(int x = map.cellBounds.position.x; x<bounds.size.x+map.cellBounds.position.x;x++)
@@ -438,7 +438,7 @@ public class hitBlockStore : MonoBehaviour {
 				{
 					if(map.GetTile(new Vector3Int(x,y,Zpos)).name=="lock_yellow")
 					{
-						//Debug.Log(new Vector3Int(x,y,Zpos)+", "+map.GetTile(new Vector3Int(x,y,Zpos)));
+						///Debug.Log(new Vector3Int(x,y,Zpos)+", "+map.GetTile(new Vector3Int(x,y,Zpos)));
 						yellowLocks.Add(new Vector3Int(x,y,Zpos));
 					}
 				}
@@ -452,7 +452,7 @@ public class hitBlockStore : MonoBehaviour {
 
 			BoundsInt bounds = map.cellBounds;
 			int Zpos = bounds.z;
-			//Debug.Log(map.cellBounds);
+			///Debug.Log(map.cellBounds);
 			for(int y = map.cellBounds.position.y; y<bounds.size.y+map.cellBounds.position.y;y++)
 			{
 				for(int x = map.cellBounds.position.x; x<bounds.size.x+map.cellBounds.position.x;x++)
@@ -460,7 +460,7 @@ public class hitBlockStore : MonoBehaviour {
 					if(map.GetTile(new Vector3Int(x,y,Zpos))!=null
 					&&map.GetTile(new Vector3Int(x,y,Zpos)).GetType().Name=="EditorTile")
 					{
-						//Debug.Log(new Vector3Int(x,y,Zpos)+", "+map.GetTile(new Vector3Int(x,y,Zpos)));
+						///Debug.Log(new Vector3Int(x,y,Zpos)+", "+map.GetTile(new Vector3Int(x,y,Zpos)));
 						editTilePositions.Add(new Vector3Int(x,y,Zpos));
 					}
 				}

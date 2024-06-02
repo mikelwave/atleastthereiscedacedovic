@@ -10,12 +10,12 @@ public class keyStartupLoader : MonoBehaviour {
 		GameSettings settings = SettingsSaveSystem.LoadSettings();
 		if(settings!=null)
 		{
-		reader.registerInputsFromFile(settings.savedInputNameStrings);
-		int type = Mathf.Clamp(settings.inputType,0,4);
-		if(type==2)type = 1;
-		reader.changeKeys(type,false);
-		//print(reader.controllerType);
-		//reader.changeKeys(5);
+			reader.registerInputsFromFile(settings.savedInputNameStrings);
+			int type = Mathf.Clamp(settings.inputType,0,4);
+			if(type==2)type = 1;
+			reader.changeKeys(type,false);
+			//print(reader.controllerType);
+			//reader.changeKeys(5);
 		}
 		else reader.changeKeys(0,true);
 		//print("keys loaded");

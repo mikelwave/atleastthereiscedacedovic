@@ -43,7 +43,7 @@ public class InputReader : MonoBehaviour {
 	string foundDigiButtonInput = "";
 	//float JoyXL,JoyXR,JoyYL,JoyYR,Joy4L,Joy4R,Joy5L,Joy5R,Joy6L,Joy6R,Joy7L,Joy7R,JoyRT,JoyLT;
 	public static bool lookingForKey = false;
-	public static string[] inputStrings=new string[13];
+	public static string[] inputStrings;
 	string[] joystickNames;
 	public static bool foundController = false;
 	//Debug
@@ -67,7 +67,7 @@ public class InputReader : MonoBehaviour {
 
 		//if(foundController) Debug.Log("Controller(s) detected");
 	}
-	void Start()
+	public void Start()
 	{
 		if(usedKeyInputs==null)
 		changeKeys(controllerType,true);
@@ -113,6 +113,7 @@ public class InputReader : MonoBehaviour {
 	}
 	public void changeKeys(int i, bool loadDefaults)
 	{
+		if(inputStrings==null) inputStrings = new string[Actions.Count-1];
 		//print("Changing keys: "+i);
 		if(joystickNames==null)
 		{

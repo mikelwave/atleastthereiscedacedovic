@@ -27,7 +27,6 @@ public class GameSettings
 		inputType = settings.inputType;
 		padLayout = settings.padLayout;
 
-		savedInputNameStrings = new string[12];
 		savedInputNameStrings = InputReader.inputStrings;
 	}
 }
