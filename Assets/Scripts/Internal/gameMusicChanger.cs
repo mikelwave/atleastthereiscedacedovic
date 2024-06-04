@@ -7,13 +7,15 @@ public class gameMusicChanger : MonoBehaviour
     #region main
     bool changed = false;
     GameData data;
-    public int BPM = 120,prevBPM;
-	public AudioClip newMusicIntro,newMusicLoop,prevMusicIntro,prevMusicLoop;
+    public int BPM = 120;
+    int prevBPM;
+	public AudioClip newMusicIntro,newMusicLoop;
+    AudioClip prevMusicIntro,prevMusicLoop;
     // Start is called before the first frame update
     void Start()
     {
         data = GameObject.Find("_GM").GetComponent<GameData>();
-        prevMusicIntro = data.Intro;
+        prevMusicIntro = data.Intro != null ? data.Intro : data.MainLoop;
         prevMusicLoop = data.MainLoop;
 		prevBPM = GameObject.Find("LevelGrid").GetComponent<storeLevelData>().BPM;
     }
@@ -23,12 +25,14 @@ public class gameMusicChanger : MonoBehaviour
         {
             changed = true;
             EnterEventTriggered();
+            if(newMusicIntro != null)
             data.changeMusicWithIntro(newMusicIntro,newMusicLoop,BPM);
+            else data.changeMusicWithIntro(newMusicLoop,newMusicLoop,BPM);
         }
     }
     public void outsideTriggerOut()
     {
-        if(!changed)
+        if(changed)
         {
             changed = false;
             ExitEventTriggered();

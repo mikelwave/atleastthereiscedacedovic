@@ -2058,7 +2058,7 @@ public class GameData : MonoBehaviour {
 		pMusic.enabled = false;
 		pMusic.BPM = BPM;
 		pMusic.enabled = true;
-		//print("Changing music with intro");
+		//print("Changing music with intro: "+newintro.name+" "+newintro);
 		//check if other music is playing, if not play this instead.
 		if(!sources[1].isPlaying)
 		{
