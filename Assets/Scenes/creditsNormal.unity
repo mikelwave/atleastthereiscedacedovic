@@ -1924,7 +1924,7 @@ MonoBehaviour:
     Rothman\r\nMGZone\r\nmudeth\r\n\r\n\r\nSFX\r\n\r\nMGZone\r\nflashkit.com\r\nsoundsnap.com\r\nsoundbible.com\r\nfreesfx.co.uk\r\n\r\n\r\nTESTERS\r\n\r\n\r\nLazyTomato\r\n\r\nNuclear
     Necro\r\n\r\nMitboy\r\n\r\n_Kilburn\r\n\r\nIkanaCanyon\r\n\nrgbmew\n\r\nBulletDeDe\r\n\r\nShrapnel\r\n\npsykrapmadafaka\n\r\njerbear64\r\n\r\nJastuk55\r\n\r\n\r\nSPECIAL
     THANKS\r\n\r\nMixa\r\n\r\nAwfulLuz\r\n\r\nDuskitty\r\n\r\nNotYourSagittarius\r\n\nSpookyKinzie\n\r\nBlueBaby\r\n\r\ntentaclecuddles\r\n\r\nSr.
-    Pelo\r\n\nMissAlrightisOkay\n\nStuoid\n\nAjoo\n\r\nMy parents who\r\nkeep asking
+    Pelo\r\n\nMissAlrightisOkay\n\nKirobsi\n\nAjoo\n\r\nMy parents who\r\nkeep asking
     me to\r\nsell this game,\r\nbut no that's not\r\nhow that works\r\r\n\r\n\nProBurek
     Productions\r\n<align=center>2020"
   m_isRightToLeft: 0
@@ -1973,7 +1973,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 552
+  m_firstOverflowCharacterIndex: 553
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -1996,7 +1996,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1730363062}
-    characterCount: 669
+    characterCount: 670
     spriteCount: 0
     spaceCount: 109
     wordCount: 71
@@ -3003,7 +3003,7 @@ MonoBehaviour:
     Rothman\r\nMGZone\r\nmudeth\r\n\r\n\r\nSFX\r\n\r\nMGZone\r\nflashkit.com\r\nsoundsnap.com\r\nsoundbible.com\r\nfreesfx.co.uk\r\n\r\n\r\nTESTERS\r\n\r\n\r\nLazyTomato\r\n\r\nNuclear
     Necro\r\n\r\nMitboy\r\n\r\n_Kilburn\r\n\r\nIkanaCanyon\r\n\nrgbmew\n\r\nBulletDeDe\r\n\r\nShrapnel\r\n\npsykrapmadafaka\n\r\njerbear64\r\n\r\nJastuk55\r\n\r\n\r\nSPECIAL
     THANKS\r\n\r\nMixa\r\n\r\nAwfulLuz\r\n\r\nDuskitty\r\n\r\nNotYourSagittarius\r\n\nSpookyKinzie\n\r\nBlueBaby\r\n\r\ntentaclecuddles\r\n\r\nSr.
-    Pelo\r\n\nMissAlrightisOkay\n\nStuoid\n\nAjoo\n\r\nMy parents who\r\nkeep asking
+    Pelo\r\n\nMissAlrightisOkay\n\nKirobsi\n\nAjoo\n\r\nMy parents who\r\nkeep asking
     me to\r\nsell this game,\r\nbut no that's not\r\nhow that works\r\n\r\n\r\rCREDITS
     SONG\n\rRiblja \u010Corba -\nNemoj da ides\nmojom ulicom\r\n\r\n\r\nProBurek Productions\r\n<align=center>2020"
   m_isRightToLeft: 0
@@ -3052,7 +3052,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 552
+  m_firstOverflowCharacterIndex: 553
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -3075,7 +3075,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 114672736055494720}
-    characterCount: 730
+    characterCount: 731
     spriteCount: 0
     spaceCount: 120
     wordCount: 81
