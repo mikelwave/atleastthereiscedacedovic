@@ -11,6 +11,7 @@ public class AutoScrollArea : MonoBehaviour {
 	public float newCamVerticalOffset = 0;
 	float oldCamVerticalOffset = 0;
 	public bool disableWithOutSettings = false;
+	[SerializeField] bool EnablePlayerBlockerOnActivate = true;
 	void Start()
 	{
 		GetComponent<BoxCollider2D>().enabled = false;
@@ -44,7 +45,7 @@ public class AutoScrollArea : MonoBehaviour {
 				toToggle.SetActive(true);
 				//print(toToggle +" enabled");
 			}
-			cam.setAutoScrollLimits(true);
+			cam.setAutoScrollLimits(EnablePlayerBlockerOnActivate);
 		}
 	}
 	void OnDisable()
