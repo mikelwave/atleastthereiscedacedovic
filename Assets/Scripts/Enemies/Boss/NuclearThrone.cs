@@ -91,7 +91,7 @@ public class NuclearThrone : MonoBehaviour
         yield return new WaitUntil(()=>textBox.eventInt==6);
         playVA(5);
         yield return new WaitUntil(()=>textBox.eventInt==7);
-        yield return new WaitUntil(()=>anim.GetInteger("Value")==1);
+        yield return new WaitUntil(()=>anim.GetInteger("Value")==1 || !anim.gameObject.activeInHierarchy);
         StartCoroutine(data.musicIntro(null,music));
         pBounce.enabled = false;
         pBounce.BPM = 256;
@@ -240,7 +240,7 @@ public class NuclearThrone : MonoBehaviour
         yield return new WaitUntil(()=>textBox.eventInt==1);
         playVA(6);
         col.offset+=new Vector2(0,15);
-        yield return new WaitUntil(()=>anim.GetInteger("Value")==1);
+        yield return new WaitUntil(()=>anim.GetInteger("Value")==1 || !anim.gameObject.activeInHierarchy);
         stopVA();
         pScript.goToCutsceneMode(true);
         StartCoroutine(spawnHole());
