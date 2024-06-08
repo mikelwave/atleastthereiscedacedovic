@@ -103,6 +103,7 @@ public class GameData : MonoBehaviour {
 	public MGCameraController cam;
 	public dataShare DataS;
 	public bool finishedSaving = false;
+	public static bool finishedLoading = false;
 	int tickInt = 0;
 	float musicMixerVolume;
 	public AudioMixer mus;
@@ -429,6 +430,7 @@ public class GameData : MonoBehaviour {
 	}
 	void OnEnable()
 	{
+		finishedLoading = false;
 		cam = GameObject.Find("Main Camera").GetComponent<MGCameraController>();
 		sfxSource = GetComponent<AudioSource>();
 		eneSounds = transform.GetChild(3).GetComponent<AudioSource>();
@@ -881,6 +883,9 @@ public class GameData : MonoBehaviour {
 		}
 		if(dataShare.randSounds)
 		sounds = RandomizeSounds(sounds);
+
+		finishedLoading = true;
+		print("GameData finished loading");
 	}
 	public AudioClip[] RandomizeSounds(AudioClip[] randSounds)
 	{

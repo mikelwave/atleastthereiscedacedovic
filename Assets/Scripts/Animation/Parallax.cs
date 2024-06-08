@@ -18,11 +18,25 @@ public class Parallax : MonoBehaviour {
 	bool work = false; 
 	public Vector3 startCamPos = Vector3.zero;
 	public bool specialparallax = false;
+
+	private enum BGScrollType {Freescroll,LockX,LockY};
+	private BGScrollType[] BGScrollTypes;
+	private bool startValueSet = false;
 	IEnumerator setValue()
 	{
 		if(specialparallax)yield return 0;
-
+		yield return new WaitUntil(()=>GameData.finishedLoading);
+		if(AutoSyncWithCamera && transform.name=="SubAreaParallax")
+		{
+			startCamPos = GameObject.Find("Main Camera").transform.position;
+		}
 		previousCamPos = startCamPos;
+		startValueSet = true;
+	}
+	IEnumerator waitforGameLoad()
+	{
+		yield return new WaitUntil(()=>startValueSet);
+		work = true;
 	}
 	
 	void Awake () 
@@ -30,6 +44,10 @@ public class Parallax : MonoBehaviour {
 		if(Application.isPlaying)
 		{
 			cam = Camera.main.transform; 
+		}
+		if(AutoSyncWithCamera && transform.name!="SubAreaParallax")
+		{
+			startCamPos = GameObject.Find("Main Camera").transform.position;
 		}
 
 		if(!Application.isPlaying&&startCamPos==Vector3.zero)
@@ -60,15 +78,17 @@ public class Parallax : MonoBehaviour {
 		}
 		if(Application.isPlaying)
 		{
-			if(AutoSyncWithCamera)
-			{
-				startCamPos = GameObject.Find("Main Camera").transform.position;
-			}
+			BGScrollTypes = new BGScrollType[transform.childCount];
 			if(backgrounds.Count==0)
 			{
 				for (int i = 0; i<transform.childCount;i++)
 				{
-		 		 backgrounds.Add(transform.GetChild(i).transform);
+					Transform bgTemp = transform.GetChild(i).transform;
+					BGScrollTypes[i] = 	bgTemp.name.ToLower().Contains("lockx") ? BGScrollType.LockX :
+										bgTemp.name.ToLower().Contains("locky") ? BGScrollType.LockY :
+										BGScrollType.Freescroll;
+
+		 			backgrounds.Add(bgTemp);
 				}
 			}
 			if(Application.isPlaying&&backgrounds.Count==0)
@@ -79,14 +99,14 @@ public class Parallax : MonoBehaviour {
 			{
 				parallaxScales[i] = backgrounds[i].position.z * -1;
 			}
-				StartCoroutine(setValue());	
+			StartCoroutine(setValue());	
 		}
 	}
 	void OnEnable()
 	{
 		if(Application.isPlaying)
 		{
-			work = true;
+			StartCoroutine(waitforGameLoad());
 		}
 	}
 	void OnDisable()
@@ -102,17 +122,17 @@ public class Parallax : MonoBehaviour {
 			{
 				if(backgrounds[i]!=null)
 				{
-				Vector2 parallax;
-				float xValue = 0, yValue = 0;
-				if(parallaxX) xValue = (previousCamPos.x - cam.position.x) * parallaxScales[i];
-				if(parallaxY) yValue = (previousCamPos.y - cam.position.y) * parallaxScales[i];
+					Vector2 parallax;
+					float xValue = 0, yValue = 0;
+					if(parallaxX && BGScrollTypes[i] != BGScrollType.LockX) xValue = (previousCamPos.x - cam.position.x) * parallaxScales[i];
+					if(parallaxY && BGScrollTypes[i] != BGScrollType.LockY) yValue = (previousCamPos.y - cam.position.y) * parallaxScales[i];
 
-				parallax = new Vector2(xValue,yValue);
+					parallax = new Vector2(xValue,yValue);
 
-				Vector3 backgroundTargetPos = new Vector3 (backgrounds[i].position.x + parallax.x, backgrounds[i].position.y + parallax.y, backgrounds[i].position.z);
+					Vector3 backgroundTargetPos = new Vector3 (backgrounds[i].position.x + parallax.x, backgrounds[i].position.y + parallax.y, backgrounds[i].position.z);
 				
 				
-				backgrounds[i].position = Vector3.Lerp (backgrounds[i].position, backgroundTargetPos, smoothing * 0.16f);
+					backgrounds[i].position = Vector3.Lerp (backgrounds[i].position, backgroundTargetPos, smoothing * 0.16f);
 				}
 			}
 			previousCamPos = cam.position; 
